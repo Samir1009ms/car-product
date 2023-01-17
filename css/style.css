@@ -1,0 +1,738 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.scroll {
+  position: fixed;
+  z-index: 10;
+  width: 30px;
+  height: 60px;
+  right: 20px;
+  bottom: 35px;
+  transform: translateY(93px);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+}
+.header .top {
+  width: 100%;
+  height: 40px;
+  background-color: #1e2228;
+  color: white;
+}
+.header .top .top-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .top .top-container .top-text i {
+  color: #ffd000;
+}
+.header .top .top-container .top-link i {
+  color: white;
+}
+.header .nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header .nav .nav-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .nav .nav-container .nav-logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav .nav-container .nav-list .nav-list-top {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header .nav .nav-container .nav-list .nav-list-top .listler .list-link {
+  color: white;
+  transition: all 0.35s;
+}
+.header .nav .nav-container .nav-list .nav-list-top .listler .list-link i {
+  color: #ffd000;
+  margin-right: 5px;
+  z-index: 1;
+}
+.header .nav .nav-container .nav-list .nav-list-top .listler .list-link:hover {
+  color: #ffd000;
+  transition: all 0.35s;
+}
+.header .nav .nav-container .nav-list .nav-list-top .listler .list-link:active {
+  color: #ffd000;
+}
+
+.main {
+  width: 100%;
+}
+.main .main-video {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.main .main-video .video-container {
+  width: 100%;
+  height: 100%;
+}
+.main .main-video .video-container .video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main-video .main-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.3882352941);
+}
+.main .main-video .main-content .main-content-container {
+  width: 78%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  position: absolute;
+  left: 10.6%;
+  top: 29%;
+  text-align: center;
+}
+.main .main-video .main-content .main-content-container .main-content-text .main-content-text-top {
+  font-size: 70px;
+  color: #ffd000;
+  margin-bottom: 20px;
+}
+.main .main-video .main-content .main-content-container .main-content-text .main-content-text-center {
+  font-size: 17;
+  color: #fff;
+  font-weight: 600;
+  line-height: 2;
+}
+.main .main-video .main-content .main-content-container .main-content-selected {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  margin: 70px auto auto;
+  overflow: hidden;
+  padding: 50px 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .location {
+  width: 19.6%;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  text-transform: uppercase;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .location option {
+  color: #fff;
+  background-color: rgba(14, 12, 12, 0.753);
+}
+.main .main-video .main-content .main-content-container .main-content-selected .date {
+  width: 40.2%;
+  display: flex;
+  gap: 5px;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .date .date-text {
+  width: 100%;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .date .date-text::-moz-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .date .date-text:-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .date .date-text::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .main-button {
+  cursor: pointer;
+  transition: 0.44s;
+}
+.main .main-video .main-content .main-content-container .main-content-selected .main-button:hover {
+  background-color: #ffd000;
+  color: #1e2228;
+}
+.main .about {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+.main .about .about-container {
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .about .about-container .about-container-top {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.main .about .about-container .about-container-top .about-text {
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 33px;
+}
+.main .about .about-container .about-container-top .about-container-icon {
+  position: relative;
+  width: 60px;
+  margin: 0 auto;
+  color: #ffd000;
+  font-size: 18px;
+}
+.main .about .about-container .about-container-top .about-container-icon::after {
+  content: "";
+  background-color: #333;
+  height: 2px;
+  left: -38px;
+  position: absolute;
+  top: 12px;
+  width: 50px;
+}
+.main .about .about-container .about-container-top .about-container-icon::before {
+  background-color: #333;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: -38px;
+  top: 12px;
+  width: 50px;
+}
+.main .about .about-container .about-container-top .about-txt {
+  margin-top: 10px;
+  color: #333;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+}
+.main .about .about-container .about-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+.main .about .about-container .about-container-center .about-center-container {
+  width: 55%;
+}
+.main .about .about-container .about-container-center .about-center-container .about-center-container-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.6;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.8px;
+}
+.main .about .about-container .about-container-center .about-center-container .about-button-container .about-button {
+  background-color: #ffd000;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 16px 36px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  outline: none;
+  border: none;
+}
+.main .about .about-container .about-container-center .about-container-img {
+  width: 50%;
+}
+.main .about .about-container .about-container-center .about-container-img .about-img {
+  width: 100%;
+}
+.main .about .about-container .about-container-bottom {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  width: 100%;
+  gap: 33px;
+}
+.main .about .about-container .about-container-bottom .about-bottom-container {
+  width: 33.333%;
+  line-height: 1.8;
+  padding: 35px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.main .about .about-container .about-container-bottom .about-bottom-container:hover {
+  background-color: #ffd000;
+  color: rgb(168, 168, 168);
+}
+.main .about .about-container .about-container-bottom .about-bottom-container:hover i {
+  color: #fff;
+}
+.main .about .about-container .about-container-bottom .about-bottom-container i {
+  color: #ffd000;
+  font-size: 27px;
+}
+.main .about .about-container .about-container-bottom .about-bottom-container .about-bottom-top {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 10px;
+}
+.main .about .about-container .about-container-bottom .about-bottom-container .about-bottom-text {
+  font-size: 16px;
+}
+.main .slider {
+  width: 100%;
+  height: 150px;
+  background-color: #eaeaea;
+  padding: 20px 0;
+}
+.main .slider .slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  overflow: scroll;
+}
+.main .slider .slider-container::-webkit-scrollbar {
+  display: none;
+}
+.main .slider .slider-container .slyde {
+  width: 20%;
+  position: absolute;
+  top: 0;
+}
+.main .services {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+.main .services .services-container {
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+.main .services .services-container .services-top {
+  text-align: center;
+  font-size: 15px;
+  height: 186px;
+  width: 100%;
+}
+.main .services .services-container .services-top .services-text {
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 33px;
+}
+.main .services .services-container .services-top .services-icon {
+  position: relative;
+  width: 60px;
+  margin: 0 auto;
+  color: #ffd000;
+  font-size: 18px;
+}
+.main .services .services-container .services-top .services-icon::after {
+  content: "";
+  background-color: #333;
+  height: 2px;
+  left: -38px;
+  position: absolute;
+  top: 12px;
+  width: 50px;
+}
+.main .services .services-container .services-top .services-icon::before {
+  background-color: #333;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: -38px;
+  top: 12px;
+  width: 50px;
+}
+.main .services .services-container .services-top .services-txt {
+  margin-top: 10px;
+  color: #333;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+}
+.main .services .services-container .services-bottom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
+.main .services .services-container .services-bottom .srbtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 2;
+  font-size: 25px;
+  cursor: pointer;
+}
+.main .services .services-container .services-bottom .servicesLeft {
+  left: 19px;
+  width: 25px;
+}
+.main .services .services-container .services-bottom .services-container-bottom {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container {
+  width: 31.65%;
+  line-height: 1.8;
+  padding: 35px 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  transition: 0.55s;
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container:hover {
+  background-color: #ffd000;
+  color: rgb(168, 168, 168);
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container:hover i {
+  color: #fff;
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container i {
+  color: #ffd000;
+  font-size: 27px;
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container .services-bottom-top {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 10px;
+}
+.main .services .services-container .services-bottom .services-container-bottom .services-bottom-container .services-bottom-text {
+  font-size: 16px;
+}
+.main .progress {
+  width: 100%;
+  height: 330px;
+  position: relative;
+}
+.main .progress .progress-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .progress .progress-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6588235294);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .progress .progress-container .progress-main {
+  width: 71%;
+  height: 39.5%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.main .progress .progress-container .progress-main .progress-top {
+  height: 100%;
+  width: 31.5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.main .progress .progress-container .progress-main i {
+  color: #ffd000;
+  font-size: 50px;
+}
+.main .progress .progress-container .progress-main .progress-main-container {
+  margin-left: 25px;
+}
+.main .progress .progress-container .progress-main .progress-main-container .progress-number {
+  font-size: 40px;
+  color: white;
+}
+.main .progress .progress-container .progress-main .progress-main-container p {
+  color: white;
+  text-transform: uppercase;
+}
+.main .car {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+.main .car .car-container {
+  width: 82%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+.main .car .car-container .car-top {
+  text-align: center;
+  font-size: 15px;
+  height: 186px;
+  width: 100%;
+}
+.main .car .car-container .car-top .car-text {
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 33px;
+}
+.main .car .car-container .car-top .car-icon {
+  position: relative;
+  width: 60px;
+  margin: 0 auto;
+  color: #ffd000;
+  font-size: 18px;
+}
+.main .car .car-container .car-top .car-icon::after {
+  content: "";
+  background-color: #333;
+  height: 2px;
+  left: -38px;
+  position: absolute;
+  top: 12px;
+  width: 50px;
+}
+.main .car .car-container .car-top .car-icon::before {
+  background-color: #333;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: -38px;
+  top: 12px;
+  width: 50px;
+}
+.main .car .car-container .car-top .car-txt {
+  margin-top: 10px;
+  color: #333;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+}
+.main .car .car-container .car-bar1 {
+  width: 99%;
+  margin: 0 auto;
+  position: relative;
+}
+.main .car .car-container .car-bar1::after {
+  content: "";
+  background-color: #ffd000;
+  height: 3px;
+  left: -1px;
+  position: absolute;
+  bottom: -3px;
+  width: 99%;
+}
+.main .car .car-container .car-bar1 .car-bar1-btn {
+  background-color: #ffd000 !important;
+  color: #fff !important;
+}
+.main .car .car-container .car-bar1 .car-button {
+  background-color: #f3f3f3;
+  border: medium none;
+  border-radius: 0 !important;
+  color: #1e2228;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin-right: 3px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.main .car .car-container .car-bar2 {
+  width: 99%;
+  margin: 50px 0;
+}
+.main .car .car-container .car-bar2 .car-bar2-btn {
+  background-color: #ffd000;
+  color: #fff;
+}
+.main .car .car-container .car-bar2 .car-bar2-btn::after {
+  content: "";
+  background-color: #fff;
+  height: 16px;
+  left: 45%;
+  position: absolute;
+  bottom: -9px;
+  width: 8%;
+  transform: rotateZ(45deg);
+}
+.main .car .car-container .car-bar2 .car-bar2-button {
+  width: 16.2%;
+  height: 46px;
+  border: 1px solid #e2e2e2;
+  color: #333;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 0;
+  position: relative;
+  transition: 0.4s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.main .car .car-container .car-bar2 .car-bar2-button:hover {
+  background-color: #ffd000;
+  color: #fff;
+}
+.main .car .car-container .car-select {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  row-gap: 25px;
+}
+.main .car .car-container .car-select .car-photo {
+  width: 33%;
+}
+.main .car .car-container .car-select .car-photo .car-container-info {
+  height: 24.4%;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-img .car-jpg {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 9px;
+  height: 233px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container {
+  width: 93.7%;
+  height: 134px;
+  margin-left: auto;
+  margin-right: 14.9px;
+  position: relative;
+  top: -5px;
+  padding-top: 20px;
+  border: 1.3px solid rgba(0, 0, 0, 0.3411764706);
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-name {
+  width: 84%;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-name .car-text {
+  color: #333;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-name .car-pul {
+  color: #ffd000;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-txt {
+  color: #828282;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 13px 28px 15px;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-info {
+  width: 84%;
+  margin: 0 auto;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-info .car-year {
+  border: 1px solid #e2e2e2;
+  color: #828282;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main .car .car-container .car-select .car-photo .car-container-info .car-info-container .car-info .car-year:hover {
+  background-color: #fab702;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
