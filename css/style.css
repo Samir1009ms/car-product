@@ -907,7 +907,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 2;
   position: relative;
-  background: url("/img/photo/audir8.webp");
+  background: url("https://samir1009ms.github.io/car-product//img/photo/audir8.webp");
   background-size: 100%;
   height: 886px;
 }
