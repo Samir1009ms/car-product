@@ -13,7 +13,7 @@ let skills1= setInterval(() => {
     }
 
     progress1.textContent=say1 +"+"
-console.log(say1);
+// console.log(say1);
 }, 25);
 
 
@@ -25,7 +25,7 @@ let skills2=setInterval(() => {
     say2+=5
     }
     progress2.textContent=say2+"+"
-    console.log(say2);
+    // console.log(say2);
 
 
 }, 25);
@@ -36,7 +36,7 @@ let skills3 = setInterval(() => {
     say3++
     }
     progress3.textContent=say3+"+"
-    console.log(say3);
+    // console.log(say3);
 
 
 }, 25);

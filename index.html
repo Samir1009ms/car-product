@@ -268,19 +268,20 @@
         <section class="car">
             <div class="car-container">
                 <div class="car-top">
-                    <h2 class="car-text">choose your car</h2>
+                    <h2 class="car-text2">choose your car</h2>
                     <p class="car-icon">
                         <i class="fa-solid fa-car"></i>
                     </p>
                     <p class="car-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <div class="car-bar1">
-                    <button class="car-button popular">popular cars</button>
-                    <button class="car-button new old">newest car</button>
-                    <button class="car-button map">our office</button>
+                    <button data-btn="btn1" data-index="0" class="car-button  car-bar1-btn  popular">popular
+                        cars</button>
+                    <button data-btn="btn2" data-index="1" class="car-button new old">newest car</button>
+                    <button data-btn="btn3" data-index="2" class="car-button map">our office</button>
                 </div>
                 <div class="car-bar2">
-                    <button class="car-bar2-button car-full">all</button>
+                    <button class="car-bar2-button car-bar2-btn car-full">all</button>
                     <button class="car-bar2-button dodge">dodge</button>
                     <button class="car-bar2-button bmw">bmw</button>
                     <button class="car-bar2-button amg">amg</button>
@@ -289,28 +290,9 @@
                 </div>
                 <div class="car-select">
                     <div data-name="dodge" class="car-photo">
-                        <div  class="car-container-info">
-                            <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/dodge-challanger.jpg" alt="">
-                            </div>
-                           <div class="car-info-container">
-                            <span class="car-name">
-                                <h4 class="car-text">dodge challanger</h4>
-                                <span class="car-pul"> $100/day</span>
-                            </span>
-                            <p class="car-txt"> hatchback</p>
-                            <p class="car-info">
-                                <span class="car-year">2022</span>
-                                <span class="car-year">auto</span>
-                                <span class="car-year">air condinition</span>
-                            </p>
-                           </div>
-                        </div>
-                    </div>
-                    <div data-name="dodge" class="car-photo">
                         <div class="car-container-info">
                             <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/dodge-challanger-2.jpg" alt="">
+                                <img class="car-jpg" src="./img/photo/dodge-challanger.jpg" alt="">
                             </div>
                             <div class="car-info-container">
                                 <span class="car-name">
@@ -320,16 +302,35 @@
                                 <p class="car-txt"> hatchback</p>
                                 <p class="car-info">
                                     <span class="car-year">2022</span>
+                                    <span class="car-year">auto</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="dodge" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/dodge-challanger-2.jpg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">dodge</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2022</span>
                                     <span class="car-year">manual</span>
                                     <span class="car-year">air condinition</span>
                                 </p>
-                               </div>
+                            </div>
                         </div>
                     </div>
-                    <div data-name="bmw" class="car-photo">
+                    <div data-name="bmw" class="car-photo bmwww">
                         <div class="car-container-info">
                             <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/bmw-e60.jpeg" alt="">
+                                <img class="car-jpg" src="./img/photo/bmw-e60.jpeg" alt="">
                             </div>
                             <div class="car-info-container">
                                 <span class="car-name">
@@ -342,13 +343,14 @@
                                     <span class="car-year">manual</span>
                                     <span class="car-year">air condinition</span>
                                 </p>
-                               </div>
+                            </div>
                         </div>
                     </div>
-                    <div  data-name="amg" class="car-photo">
+                    <div data-name="amg" class="car-photo">
                         <div class="car-container-info">
                             <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/creative-bespoke-mercedes-amg-gt-s-modifiye.jpg" alt="">
+                                <img class="car-jpg" src="./img/photo/creative-bespoke-mercedes-amg-gt-s-modifiye.jpg"
+                                    alt="">
                             </div>
                             <div class="car-info-container">
                                 <span class="car-name">
@@ -361,13 +363,13 @@
                                     <span class="car-year">manual</span>
                                     <span class="car-year">air condinition</span>
                                 </p>
-                               </div>
+                            </div>
                         </div>
                     </div>
                     <div data-name="ford" class="car-photo">
                         <div class="car-container-info">
                             <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/Ford-Mustang-GT.jpg" alt="">
+                                <img class="car-jpg" src="./img/photo/Ford-Mustang-GT.jpg" alt="">
                             </div>
                             <div class="car-info-container">
                                 <span class="car-name">
@@ -380,13 +382,13 @@
                                     <span class="car-year">auto</span>
                                     <span class="car-year">air condinition</span>
                                 </p>
-                               </div>
+                            </div>
                         </div>
                     </div>
                     <div data-name="nissan" class="car-photo">
                         <div class="car-container-info">
                             <div class="car-img">
-                               <img class="car-jpg" src="./img/photo/nissan-gtr.jpg" alt="">
+                                <img class="car-jpg" src="./img/photo/nissan-gtr.jpg" alt="">
                             </div>
                             <div class="car-info-container">
                                 <span class="car-name">
@@ -399,14 +401,329 @@
                                     <span class="car-year">manual</span>
                                     <span class="car-year">air condinition</span>
                                 </p>
-                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client">
+            <!-- <div class="photo"> -->
+            <!-- <img class="photo-jpg" src="./img/photo/audir8.webp" alt=""> -->
+            <!-- </div> -->
+            <div class="client-img">
+
+            </div>
+            <div class="client-container">
+                <div class="client-top">
+                    <h2 class="services-text">only quality for clients</h2>
+                    <p class="services-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </p>
+                    <p class="services-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="client-bootom">
+                    <div class="client-bottom-container">
+                        <h5 class="clinet-bottom-text">business</h5>
+                        <h3 class="client-bootom-price">$ 55.99</h3>
+                        <p class="client-bootom-month">per month</p>
+                        <ul class="client-bootom-list">
+                            <li class="client-bootom-list-text">FREE VEHICLE DELIVERY</li>
+                            <li class="client-bootom-list-text">WEDDINGS CELEBRATIONS</li>
+                            <li class="client-bootom-list-text">FULL INSURANCE INCLUDED</li>
+                            <li class="client-bootom-list-text">TRANSPORT ABROAD</li>
+                            <li class="client-bootom-list-text">ALL INCLUSIVE MINI BAR</li>
+                            <li class="client-bootom-list-text">CHAUFFER INCLUDED IN PRICE</li>
+                        </ul>
+                    </div>
+                    <div class="client-bottom-container">
+                        <h5 class="clinet-bottom-text">business</h5>
+                        <h3 class="client-bootom-price">$ 55.99</h3>
+                        <p class="client-bootom-month">per month</p>
+                        <ul class="client-bootom-list">
+                            <li class="client-bootom-list-text">FREE VEHICLE DELIVERY</li>
+                            <li class="client-bootom-list-text">WEDDINGS CELEBRATIONS</li>
+                            <li class="client-bootom-list-text">FULL INSURANCE INCLUDED</li>
+                            <li class="client-bootom-list-text">TRANSPORT ABROAD</li>
+                            <li class="client-bootom-list-text">ALL INCLUSIVE MINI BAR</li>
+                            <li class="client-bootom-list-text">CHAUFFER INCLUDED IN PRICE</li>
+                        </ul>
+                    </div>
+                    <div class="client-bottom-container">
+                        <h5 class="clinet-bottom-text">business</h5>
+                        <h3 class="client-bootom-price">$ 55.99</h3>
+                        <p class="client-bootom-month">per month</p>
+                        <ul class="client-bootom-list">
+                            <li class="client-bootom-list-text">FREE VEHICLE DELIVERY</li>
+                            <li class="client-bootom-list-text">WEDDINGS CELEBRATIONS</li>
+                            <li class="client-bootom-list-text">FULL INSURANCE INCLUDED</li>
+                            <li class="client-bootom-list-text">TRANSPORT ABROAD</li>
+                            <li class="client-bootom-list-text">ALL INCLUSIVE MINI BAR</li>
+                            <li class="client-bootom-list-text">CHAUFFER INCLUDED IN PRICE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="persons">
+            <div class="persons-container">
+                <div class="persons-top">
+                    <h2 class="persons-text">our services</h2>
+                    <p class="persons-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </p>
+                    <p class="persons-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="persons-bottom">
+                    <div class="person-left">
+                        <div class="person-left-container leftactive">
+                            <div class="person-left-img">
+                                <img class="person-left-jpg" src="./img/photo/person1.webp" alt="">
+                            </div>
+                            <p class="person-left-name">raju ahammad</p>
+                        </div>
+                        <div class="person-left-container">
+                            <div class="person-left-img">
+                                <img class="person-left-jpg" src="./img/photo/person.webp" alt="">
+                            </div>
+                            <p class="person-left-name">vongchong smith</p>
+                        </div>
+                        <div class="person-left-container">
+                            <div class="person-left-img">
+                                <img class="person-left-jpg" src="./img/photo/person3.webp" alt="">
+                            </div>
+                            <p class="person-left-name">alex tuntuni</p>
+                        </div>
+                        <div class="person-left-container">
+                            <div class="person-left-img">
+                                <img class="person-left-jpg" src="./img/photo/person4.webp" alt="">
+                            </div>
+                            <p class="person-left-name">any anderssen</p>
+                        </div>
+                    </div>
+                    <div class="person-center">
+                        <img class="person-center-jpg" src="./img/photo/person 2 1.webp" alt="">
+                    </div>
+                    <div class="person-center" style="display: none;">
+                        <img class="person-center-jpg" src="./img/photo/person 2 2.webp" alt="">
+                    </div>
+                    <div class="person-center" style="display: none;">
+                        <img class="person-center-jpg" src="./img/photo/person 2 3.webp" alt="">
+                    </div>
+                    <div class="person-center" style="display: none;">
+                        <img class="person-center-jpg" src="./img/photo/person 2 4.webp" alt="">
+                    </div>
+                    <div class="person-right">
+                        <div class="person-right-container">
+                            <h2 class="person-right-name">raju ahammad</h2>
+                            <p class="person-right-work">Developper</p>
+                            <i class="quote fa-solid fa-quote-left"></i>
+                            <p class="person-right-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                sollicitudin fermentum dolor.
+                                Nunc nec augue urna. Cras varius orci vitae lacinia efficitur.
+                            </p>
+                            <div class="person-right-sosial">
+                                <i class=" person-right-icon fa-brands fa-facebook-f"></i>
+                                <i class=" person-right-icon fa-brands fa-twitter"></i>
+                                <i class=" person-right-icon fa-brands fa-linkedin-in"></i>
+                                <i class=" person-right-icon fa-brands fa-pinterest-p"></i>
+                                <i class=" person-right-icon fa-solid fa-basketball"></i>
+                            </div>
+                        </div>
+                        <div class="person-right-container" style="display: none;">
+                            <h2 class="person-right-name">vongchong smith</h2>
+                            <p class="person-right-work">Desinger</p>
+                            <i class="quote fa-solid fa-quote-left"></i>
+                            <p class="person-right-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                sollicitudin fermentum dolor.
+                                Nunc nec augue urna. Cras varius orci vitae lacinia efficitur.
+                            </p>
+                            <div class="person-right-sosial">
+                                <i class=" person-right-icon fa-brands fa-facebook-f"></i>
+                                <i class=" person-right-icon fa-brands fa-twitter"></i>
+                                <i class=" person-right-icon fa-brands fa-linkedin-in"></i>
+                                <i class=" person-right-icon fa-brands fa-pinterest-p"></i>
+                                <i class=" person-right-icon fa-solid fa-basketball"></i>
+                            </div>
+                        </div>
+                        <div class="person-right-container" style="display: none;">
+                            <h2 class="person-right-name">alex tuntuni</h2>
+                            <p class="person-right-work">Marketer</p>
+                            <i class="quote fa-solid fa-quote-left"></i>
+                            <p class="person-right-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                sollicitudin fermentum dolor.
+                                Nunc nec augue urna. Cras varius orci vitae lacinia efficitur.
+                            </p>
+                            <div class="person-right-sosial">
+                                <i class=" person-right-icon fa-brands fa-facebook-f"></i>
+                                <i class=" person-right-icon fa-brands fa-twitter"></i>
+                                <i class=" person-right-icon fa-brands fa-linkedin-in"></i>
+                                <i class=" person-right-icon fa-brands fa-pinterest-p"></i>
+                                <i class=" person-right-icon fa-solid fa-basketball"></i>
+                            </div>
+                        </div>
+                        <div class="person-right-container" style="display: none;">
+                            <h2 class="person-right-name">any andressen</h2>
+                            <p class="person-right-work">Manager</p>
+                            <i class="quote fa-solid fa-quote-left"></i>
+                            <p class="person-right-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                sollicitudin fermentum dolor.
+                                Nunc nec augue urna. Cras varius orci vitae lacinia efficitur.
+                            </p>
+                            <div class="person-right-sosial">
+                                <i class=" person-right-icon fa-brands fa-facebook-f"></i>
+                                <i class=" person-right-icon fa-brands fa-twitter"></i>
+                                <i class=" person-right-icon fa-brands fa-linkedin-in"></i>
+                                <i class=" person-right-icon fa-brands fa-pinterest-p"></i>
+                                <i class=" person-right-icon fa-solid fa-basketball"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="taxi">
+            <div class="taxi-video">
+                <video class="taxi-play" src="./video/rc_redeye-30112022-0001.mp4" autoplay muted></video>
+            </div>
+            <div class="color"></div>
+
+            <div class="taxi-container">
+                <div class="taxi-container-left">
+                    <h2 class="taxi-text">save 30% with the app</h2>
+                    <p class="taxi-txt">Easy & Fast - Book a car in 60 seconds</p>
+                    <div class="taxi-buton">
+                        <button class="taxi-button"><i class="fa-brands fa-android"></i>Android Store</button>
+                        <button class="taxi-button"><i class="fa-brands fa-apple"></i>Apple Store</button>
+                    </div>
+                </div>
+                <div class="taxi-container-right">
+                    <img class="taxi-jpg" src="./img/photo/mobile-app.png.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="articles-container">
+                <div class="articles-top">
+                    <h2 class="articles-text">tips and articles</h2>
+                    <p class="articles-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </p>
+                    <p class="articles-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="articles-bottom">
+                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/audir8.webp" alt=""></div>
+                    <div class="articles-right">
+                        <p class="articles-date">25 jan</p>
+                        <div class="articles-right-container">
+                            <p class="articles-right-text">WLIQUAM SIT AMET URNA EULLAM</p>
+                            <p class="articles-right-txt">
+                                <span class="txt-container">
+                                    <span class="articles-name">by::<span class="articles-user">admin</span></span>
+                                    <span class="articles-name">comments::<span class="articles-user">10</span></span>
+                                </span>
+                            </p>
+                            <p class="articles-info">Wlam Aiber Vestibulum Fringilla Oremedad Ipsum Dolor Sit Amet
+                                Consectetur Adipisicing
+                                Elit Sed Doned Eiusmod Tempored Incididunt Ut Labore Et Dolore Magna Aliquaa Enimd Ad
+                                Minim Veniad.</p>
+                            <button class="articles-button">read more <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles-bottom column-revers">
+                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/car-2.webp" alt=""></div>
+                    <div class="articles-right art">
+                        <p class="articles-date date2">14 feb</p>
+                        <div class="articles-right-container">
+                            <p class="articles-right-text">WLIQUAM SIT AMET URNA EULLAM</p>
+                            <p class="articles-right-txt">
+                                <span class="txt-container">
+                                    <span class="articles-name">by::<span class="articles-user">admin</span></span>
+                                    <span class="articles-name">comments::<span class="articles-user">10</span></span>
+                                </span>
+                            </p>
+                            <p class="articles-info">Wlam Aiber Vestibulum Fringilla Oremedad Ipsum Dolor Sit Amet
+                                Consectetur Adipisicing
+                                Elit Sed Doned Eiusmod Tempored Incididunt Ut Labore Et Dolore Magna Aliquaa Enimd Ad
+                                Minim Veniad.</p>
+                            <button class="articles-button">read more <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles-bottom">
+                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/usta.webp" alt=""></div>
+                    <div class="articles-right">
+                        <p class="articles-date">17 feb</p>
+                        <div class="articles-right-container">
+                            <p class="articles-right-text">WLIQUAM SIT AMET URNA EULLAM</p>
+                            <p class="articles-right-txt">
+                                <span class="txt-container">
+                                    <span class="articles-name">by::<span class="articles-user">admin</span></span>
+                                    <span class="articles-name">comments::<span class="articles-user">10</span></span>
+                                </span>
+                            </p>
+                            <p class="articles-info">Wlam Aiber Vestibulum Fringilla Oremedad Ipsum Dolor Sit Amet
+                                Consectetur Adipisicing
+                                Elit Sed Doned Eiusmod Tempored Incididunt Ut Labore Et Dolore Magna Aliquaa Enimd Ad
+                                Minim Veniad.</p>
+                            <button class="articles-button">read more <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <h2 class="footer-name">ABOUT US</h2>
+                <img class="footer-logo" src="./img/logo/logo.png.webp" alt="">
+                <p class="footer-top-text">Lorem ipsum dolored is a sit ameted consectetur adipisicing elit. Nobis magni
+                    assumenda distinctio
+                    debitis, eum fuga fugiat error reiciendis.</p>
+                <p class="footer-form">
+                    <input class="footer-input" type="text" name="" id="" placeholder="Subscribe Our Newestler">
+                    <i class=" footer-top-icon fa-brands fa-telegram"></i>
+                </p>
+            </div>
+            <div class="footer-center">
+                <h2 class="footer-name">RECENT POSTS</h2>
+                <p class="footer-center-text">Hello Bangladesh! <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">Lorem ipsum dolor sit amet <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">Hello Bangladesh! <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">consectetur adipisicing elit? <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+            </div>
+            <div class="footer-bottom">
+                <h2 class="footer-name">GET TOUCH</h2>
+                <p class="footer-bottom-text">Lorem ipsum doloer sited amet, consectetur adipisicing elit. nibh auguea,
+                    scelerisque sed</p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-location-dot"></i> 800/8,
+                    Kazipara, Dhaka</p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-phone"></i> +880 01 86 25 72 43
+                </p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-envelope"></i>
+                    kazukamdu83@gmail.com</p>
+                <button class="footer-bottom-location">SHOW LOCATION</button>
+            </div>
+        </div>
+        <div class="end">
+            <div class="end-container">
+                <p class="end-text">
+                    Copyright ©2023 All rights reserved | This template is made with
+                    <i class=" endicon fa-regular fa-heart"></i>
+                    by <span class="end-txt">Colorlib</span>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="./javascript/scroll.js"></script>
     <script src="./javascript/main.js"></script>
     <script src="./javascript/slides.js"></script>
