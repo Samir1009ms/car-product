@@ -6,13 +6,13 @@
     }
 }
 
-@mixin tablet {
-    @media (max-width: #{$medium-device})  {
-        @content;
-    }
-}
+// @mixin tablet {
+//     @media (max-width: #{$medium-device})  {
+//         @content;
+//     }
+// }
 
-@mixin tablet-mini {
+@mixin tablet {
     @media (max-width: #{$medium-small}) {
         @content;
     }
