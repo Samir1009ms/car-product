@@ -463,7 +463,7 @@ body::-webkit-scrollbar-thumb {
   background-position-y: center !important;
   background-position-x: center !important;
   padding: 100px 0;
-  background: url(/img/photo/aboutslider-img-1.jpg.webp);
+  background: url(https://samir1009ms.github.io/car-product//img/photo/aboutslider-img-1.jpg.webp);
   position: relative;
 }
 .xidmet::after {
