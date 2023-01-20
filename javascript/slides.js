@@ -62,3 +62,6 @@ function servicesRight() {
 }
 
 servicesRightBtn.addEventListener("click",servicesRight)
+
+
+
