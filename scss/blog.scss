@@ -251,13 +251,12 @@ body::-webkit-scrollbar-thumb {
                     }
 
                     .listler {
+
                         color: white;
                         &:hover {
                             color: #ffd000;
                             transition: all 0.35s;
                         }
-
-
 
                         .list-link {
                             color: white;
@@ -290,13 +289,14 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.account-main {
+
+.blog-main {
     width: 100%;
     height: 426px;
     background: url(https://samir1009ms.github.io/car-product//img/product/account\ mainpage-title.jpg.webp);
     background-repeat: round;
 
-    .account-container {
+    .blog-container {
         width: 100%;
         height: 100%;
         display: flex;
@@ -304,12 +304,12 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         background: #0000009e;
 
-        .account-container-top {
+        .blog-container-top {
             text-align: center;
             font-size: 15px;
             margin-bottom: 25px;
 
-            .account-text {
+            .blog-text {
                 margin-bottom: 10px;
                 position: relative;
                 text-transform: uppercase;
@@ -320,7 +320,7 @@ body::-webkit-scrollbar-thumb {
 
             }
 
-            .account-container-icon {
+            .blog-container-icon {
                 position: relative;
                 width: 60px;
                 margin: 0 auto;
@@ -348,7 +348,7 @@ body::-webkit-scrollbar-thumb {
                 }
             }
 
-            .account-txt {
+            .blog-txt {
                 margin-top: 10px;
                 color: #fff;
                 letter-spacing: 0.8px;
@@ -359,358 +359,332 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.container {
+.articles {
     width: 100%;
-    position: relative;
-    // height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0px;
+    height: auto;
+    padding: 100px 0 54px;
 
-    .height {
-        height: 850px;
-    }
+    .articles-container {
+        width: 80%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 1px;
 
-    .loginBtn {
-
-        width: 34%;
-        border-radius: 10px;
-        gap: 7px;
-        background-color: rgba(0, 0, 0, 0.192);
-        border: 1px solid #ffd000;
-        padding-top: 20px;
-        @include extra-small-device{
-        width: 85% !important;
-        gap: 5px;
-        }
         @include mobile {
-        width: 60% ;
-        }
-        @include tablet {
-            width: 47%;
+            width: 100% !important;
         }
 
-        .sert {
+        @include tablet {}
+
+
+        .articles-top {
+            text-align: center;
+            font-size: 15px;
+            height: 186px;
             width: 100%;
-            height: 107.34vh;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: -55px;
-            background-color: #000000ba;
-            z-index: 5;
 
-            .qaydaa {
-                position: absolute;
-                z-index: 6;
-                width: 24%;
-                background: #fff;
-                height: 49%;
-                overflow-y: scroll;
-                border-radius: 5px;
+            .articles-text {
+                margin-bottom: 10px;
                 position: relative;
-
-                .fa-regular {
-                    position: absolute;
-                    right: 5px;
-                    top: 4px;
-                    // color: rgb(0 0 0 / 77%);
-                    font-size: 20px;
-                    color: #ba958b;
-                    cursor: pointer;
-
-                    &:hover {
-                        color: red;
-                        transform: scale(1.12);
-                        transition: calc(.987s);
-                    }
-
-                }
-
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1.2em;
+                font-size: 33px;
             }
-        }
 
-        .qeydiyyatsiz {
-            width: 100%;
-            height: 10%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 45px;
+            .articles-icon {
 
-            .qeydiyyatsiz-text {
+                position: relative;
+                width: 60px;
+                margin: 0 auto;
+                color: #ffd000;
                 font-size: 18px;
-                text-align: center;
-                margin-bottom: 8px;
 
-                a {
-                    text-decoration: none;
-                    cursor: pointer;
-                    color: #645306;
-
-
-
+                &::after {
+                    content: "";
+                    background-color: #333;
+                    height: 2px;
+                    left: -38px;
+                    position: absolute;
+                    top: 12px;
+                    width: 50px;
                 }
+
+                &::before {
+                    background-color: #333;
+                    content: "";
+                    height: 2px;
+                    position: absolute;
+                    right: -38px;
+                    top: 12px;
+                    width: 50px;
+                }
+            }
+
+            .articles-txt {
+                margin-top: 10px;
+                color: #333;
+                letter-spacing: 0.8px;
+                font-weight: 100;
             }
         }
 
-        .button {
-            width: 68%;
-            height: 48px;
-            margin: 0 auto;
+        .column-revers {
+            flex-direction: row-reverse;
+
+            // .art {
+            //     // position: relative;
+
+            // }
+
+        }
+
+        .articles-bottom {
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 5px;
-            background: #b5babc;
-            border-radius: 10px;
-            margin-bottom: 25px;
+            box-shadow: 0px 0px 6px 2px #9f9797;
+            height: 300px;
+            margin-bottom: 46px;
 
-            .login {
-                width: 166px;
-                height: 48px;
-                padding: 17px;
-                color: #010101;
-                border-radius: 10px;
-                cursor: pointer;
-                transition: calc(0.678s);
-                z-index: 2;
-                border: none;
-                background: none;
-                border-radius: 10px;
+            @include mobile {
+                flex-direction: column !important;
+                height: auto !important;
+                padding-bottom: 40px !important;
 
             }
-        }
 
+            @include tablet {
 
-
-        .Sign {
-
-            &-container {
-                display: flex;
                 flex-direction: column;
-                align-items: center;
-                margin-top: 15px;
-                width: 100%;
-                height: 58vh;
-                gap: 25px;
-                border-radius: 10px;
-                position: relative;
+                height: auto;
+                padding-bottom: 40px;
+
+            }
 
 
-                .loginParol {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 19px;
-                    width: 75%;
+            .articles-img {
+                width: 69.104%;
+                height: 100%;
+
+                @include mobile {
+                    width: 100% !important;
+                    padding-bottom: 35px !important;
+
                 }
 
-                .fa-circle-xmark {
-                    position: absolute;
-                    top: 6px;
-                    right: 6px;
-                    color: #ba958b;
-                    cursor: pointer;
+                @include tablet {
+                    width: 100%;
+                    padding-bottom: 35px;
+
+                }
+
+
+                .articles-jpg {
+                    width: 100%;
+                    filter: grayscale(100%);
+                    transition: all 0.4s;
+                    height: 100%;
 
                     &:hover {
-                        color: red;
-                        transform: scale(1.12);
-                        transition: calc(.987s);
+                        filter: grayscale(0%);
+                        transition: all 0.4s;
+
                     }
-                }
-
-
-
-
-
-                .email {
-                    padding: 2px 13px;
-                    width: 100%;
-                    height: 46px;
-                    background-color: #eee;
-                    border: 1px solid #ffd000;
-                    border-radius: 6px;
-                    outline: none;
-                }
-
-                .daxil-ol {
-                    background-color: #ffd000;
-                    cursor: pointer;
-                    width: 100%;
                 }
             }
-        }
 
-        .Signup {
-
-            &-container {
+            .articles-right {
+                padding: 0 25px;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 19px;
                 position: relative;
 
+                @include mobile {
+                    padding: 0 !important;
+                }
 
-                .rules {
-                    position: fixed;
-                    width: 100%;
-                    height: 90%;
-                    top: 80px;
-                    background: #000000a1;
-                    z-index: 3;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                @include tablet {}
 
-                    .rules-container {
-                        width: 35%;
-                        height: 74%;
-                        overflow-x: auto;
-                        position: relative;
-                        background-color: white;
-                        padding: 4px;
+                .date2 {
+                    left: inherit !important;
+                    right: -28px;
 
-                        .rules-text {
-                            width: 96%;
-                            text-align: start;
-                            color: black;
-                        }
+                    @include mobile {
+                        // right: inherit;
+                        right: 47% !important;
 
-                        .rulesExit {
-                            position: absolute;
-                            right: 4px;
-                            top: 4px;
-                            transition: 0.35s;
-                            cursor: pointer;
-                            font-size: 17px;
 
-                            &:hover {
-                                color: red;
-                                transition: 0s.35;
-                                transform: scale(1.099);
-                            }
-                        }
                     }
+
+                    @include tablet {
+                        right: 40%;
+                    }
+
+
                 }
 
-                .registerform {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 19px;
-                    width: 75%;
-                }
-
-                .fa-circle-xmark {
+                .articles-date {
                     position: absolute;
-                    top: 6px;
-                    right: 6px;
-                    color: #ba958b;
-                    cursor: pointer;
-
-                    &:hover {
-                        color: red;
-                        transform: scale(1.12);
-                        transition: calc(.987s);
-                    }
-
-
-                }
-
-                p {
-                    font-size: 14px;
-                    color: #ba958b;
-                    cursor: pointer;
+                    top: 35%;
+                    left: -25px;
+                    width: 55px;
+                    background: #ffe000;
                     text-align: center;
-                    margin-bottom: 8px;
-                }
+                    border-radius: 10px;
+                    padding: 6px;
+                    color: #fff;
 
-                .email {
-                    padding: 2px 13px;
-                    width: 100%;
-                    height: 46px;
-                    background-color: #eee;
-                    border: 1px solid #ffd000;
-                    border-radius: 6px;
-                    outline: none;
-                }
-
-                .qayda {
-                    width: 75%;
-                    font-size: 17px;
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 3px;
-
-                    .checkbox {
-                        width: 11px;
-                        height: 14px;
+                    @include mobile {
+                        top: -21% !important;
+                        left: 40% !important;
                     }
 
-                    .qaydalar {
-                        .qaydalink {
-                            color: #ffd000;
-                            cursor: pointer;
-                            transition: calc(0.987s);
+                    @include tablet {
+                        top: -30%;
+                        left: 47%;
+                    }
 
-                            &:hover {
-                                color: black;
+                }
+
+                .articles-right-container {
+                    margin-left: 33px;
+
+                    .articles-right-text {
+
+                        font-weight: 700;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 1.2em;
+                        color: #222;
+                        font-size: 20px;
+                    }
+
+                    .articles-right-txt {
+                        margin: 15px 0 10px;
+
+
+                        .txt-container {
+                            color: #999;
+                            font-size: 12px;
+                            font-weight: 600;
+                            margin-right: 25px;
+                            text-transform: uppercase;
+
+                            .articles-name {
+                                .articles-user {
+                                    color: #ffd000;
+                                }
                             }
-                        }
-                    }
-                }
 
-                .daxil-ol {
-                    background-color: #ffd000;
-                    cursor: pointer;
-                    width: 100%;
-                }
 
-                .fullname {
-                    width: 100%;
-                    display: flex;
-                    gap: 5px;
-
-                    .add {
-                        width: 100%;
-
-                        .ad {
-                            padding: 2px 13px;
-                            width: 100%;
-                            height: 46px;
-                            background-color: #eee;
-                            border: 1px solid #ffd000;
-                            border-radius: 6px;
-                            outline: none;
                         }
                     }
 
-                    .soyadd {
-                        width: 100%;
+                    .articles-info {
+                        color: #999;
+                        line-height: 1.8;
+                        text-transform: capitalize;
+                    }
 
-                        .soyad2 {
-                            padding: 2px 13px;
-                            width: 100%;
-                            height: 46px;
-                            background-color: #eee;
-                            border: 1px solid #ffd000;
-                            border-radius: 6px;
-                            outline: none;
+                    .articles-button {
+
+                        background-color: #222;
+                        color: #ffd000;
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 700;
+                        margin-top: 25px;
+                        padding: 16px 40px;
+                        cursor: pointer;
+                        transition: all 0.4s;
+                        border: none;
+                        text-transform: uppercase;
+
+
+                        &:hover {
+                            background-color: #ffd000;
+                            color: #fff;
+                            border: none;
+
                         }
                     }
+
+
+
 
                 }
             }
+
+
+
+
         }
     }
 
-    .block {
-        display: block !important;
+
+    .articles-buton {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .articles-buton-container {
+
+            .buton {
+                width: 22%;
+                border-top-left-radius: 0.25rem;
+                border-bottom-left-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+                border-bottom-right-radius: 0.25rem;
+                border: 1px solid #ffd000;
+                display: flex;
+
+                .button {
+                    padding: 0.5rem 0.75rem;
+                    border: none;
+                    border-left: 1px solid #ffd000;
+                    background: white;
+                    &:hover {
+                        background: #ffd000;
+                        color: white;
+                    }
+
+          
+                }
+
+                .buttonNext{
+                    padding: 0.5rem 0.75rem;
+                    border: none;
+                    border-left: 1px solid #ffd000;
+                    background: white;
+                    &:hover {
+                        background: #ffd000;
+                        color: white;
+                    }
+                
+                }
+
+                .buttonPrew{
+                    padding: 0.5rem 0.75rem;
+                    border: none;
+                    border-left: 1px solid #ffd000;
+                    background: white;
+                    &:hover {
+                        background: #ffd000;
+                        color: white;
+                    }
+                }
+
+            }
+        }
     }
 }
+
 
 .footer {
     width: 100%;
@@ -791,7 +765,6 @@ body::-webkit-scrollbar-thumb {
                     padding: 6px;
                     cursor: pointer;
                     border: none;
-
                 }
             }
 

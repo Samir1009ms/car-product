@@ -164,16 +164,103 @@ body::-webkit-scrollbar-thumb {
 
                     @include mobile {
                         flex-direction: column;
+                        align-items: flex-start;
                     }
 
                     @include tablet {
                         flex-direction: column;
+                        align-items: flex-start;
+
+                    }
+
+                    .blogDrop {
+                        position: relative;
+                        cursor: pointer;
+                        .drow {
+                            position: absolute;
+                            width: 140px;
+                            height: 70px;
+                            top: 52px;
+                            background: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            z-index: 3;
+                            @include tablet {
+                                position: relative;
+                                top: 0;
+                                background: none;
+                                &::after{
+                                    position: relative;
+                                    width: 0px;
+                                    display: none;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 14px;
+                                height: 14px;
+                                background: white;
+                                position: absolute;
+                                top: -6px;
+                                transform: rotateZ(46deg);
+                                left: 20px;
+                                z-index: 0;
+                            }
+
+                            .down {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                z-index: 1;
+
+                                @include tablet {
+                                    
+                                    &:hover {
+                                        background: black !important;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: #ffd000;
+                                }
+
+
+                                .down-link {
+                                    padding-left: 10px;
+                                    color: #000;
+
+                                    @include tablet {
+                                        color: white;
+
+                                        &:hover{
+                                            color: #ffe000;
+                                        
+                                        }
+                                    }
+
+                                  
+                                }
+                            }
+                        }
+
+
                     }
 
                     .listler {
-                        .list-link {
+                        color: white;
 
-                            color: white;
+
+                        &:hover {
+                            color: #ffd000;
+                            transition: all 0.35s;
+                        }
+
+                        .list-link {
+                        color: white;
                             transition: all 0.35s;
 
                             i {

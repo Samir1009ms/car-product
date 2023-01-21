@@ -23,3 +23,12 @@ mainBtn.addEventListener("click", () => {
 
 
 })
+
+
+const blogDrop=document.querySelector(".blogDrop")
+const drow =document.querySelector(".drow")
+
+blogDrop.addEventListener("click",()=>{
+    drow.classList.toggle("hidden")
+    
+})
