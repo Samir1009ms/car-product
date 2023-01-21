@@ -166,13 +166,13 @@ body::-webkit-scrollbar-thumb {
   color: #ffd000;
 }
 
-.account-main {
+.contact-main {
   width: 100%;
   height: 426px;
   background: url(https://samir1009ms.github.io/car-product//img/product/account\ mainpage-title.jpg.webp);
   background-repeat: round;
 }
-.account-main .account-container {
+.contact-main .contact-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -180,12 +180,12 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   background: rgba(0, 0, 0, 0.6196078431);
 }
-.account-main .account-container .account-container-top {
+.contact-main .contact-container .contact-container-top {
   text-align: center;
   font-size: 15px;
   margin-bottom: 25px;
 }
-.account-main .account-container .account-container-top .account-text {
+.contact-main .contact-container .contact-container-top .contact-text {
   margin-bottom: 10px;
   position: relative;
   text-transform: uppercase;
@@ -194,14 +194,14 @@ body::-webkit-scrollbar-thumb {
   font-size: 33px;
   color: white;
 }
-.account-main .account-container .account-container-top .account-container-icon {
+.contact-main .contact-container .contact-container-top .contact-container-icon {
   position: relative;
   width: 60px;
   margin: 0 auto;
   color: #ffd000;
   font-size: 18px;
 }
-.account-main .account-container .account-container-top .account-container-icon::after {
+.contact-main .contact-container .contact-container-top .contact-container-icon::after {
   content: "";
   background-color: #fff;
   height: 2px;
@@ -210,7 +210,7 @@ body::-webkit-scrollbar-thumb {
   top: 12px;
   width: 50px;
 }
-.account-main .account-container .account-container-top .account-container-icon::before {
+.contact-main .contact-container .contact-container-top .contact-container-icon::before {
   background-color: #fff;
   content: "";
   height: 2px;
@@ -219,303 +219,162 @@ body::-webkit-scrollbar-thumb {
   top: 12px;
   width: 50px;
 }
-.account-main .account-container .account-container-top .account-txt {
+.contact-main .contact-container .contact-container-top .contact-txt {
   margin-top: 10px;
   color: #fff;
   letter-spacing: 0.8px;
   font-weight: 100;
 }
 
-.container {
-  width: 100%;
-  position: relative;
+.map {
+  padding: 120px 0px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px;
 }
-.container .height {
-  height: 850px;
+
+.contact-form {
+  width: 100%;
+  padding-bottom: 120px;
 }
-.container .loginBtn {
-  width: 34%;
-  border-radius: 10px;
-  gap: 7px;
-  background-color: rgba(0, 0, 0, 0.192);
-  border: 1px solid #ffd000;
-  padding-top: 20px;
+.contact-form .contact-form-container {
+  width: 100%;
+  display: flex;
 }
-@media (max-width: 575px) {
-  .container .loginBtn {
-    width: 85% !important;
-    gap: 5px;
+@media (max-width: 991px) {
+  .contact-form .contact-form-container {
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: center !important;
   }
 }
+.contact-form .contact-form-container .contact-form-top {
+  width: 28.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 13px;
+}
 @media (max-width: 767px) {
-  .container .loginBtn {
-    width: 60%;
+  .contact-form .contact-form-container .contact-form-top {
+    width: 80% !important;
+    padding-left: 40px !important;
   }
 }
 @media (max-width: 991px) {
-  .container .loginBtn {
-    width: 47%;
+  .contact-form .contact-form-container .contact-form-top {
+    width: 90%;
+    padding-left: 40px;
   }
 }
-.container .loginBtn .sert {
-  width: 100%;
-  height: 107.34vh;
-  position: absolute;
+.contact-form .contact-form-container .contact-form-top .contact-top-info {
   display: flex;
   align-items: center;
-  justify-content: center;
-  top: -55px;
-  background-color: rgba(0, 0, 0, 0.7294117647);
-  z-index: 5;
 }
-.container .loginBtn .sert .qaydaa {
-  position: absolute;
-  z-index: 6;
-  width: 24%;
-  background: #fff;
-  height: 49%;
-  overflow-y: scroll;
-  border-radius: 5px;
-  position: relative;
+.contact-form .contact-form-container .contact-form-top .contact-top-info .contact-top-icon {
+  margin-right: 30px;
 }
-.container .loginBtn .sert .qaydaa .fa-regular {
-  position: absolute;
-  right: 5px;
-  top: 4px;
-  font-size: 20px;
-  color: #ba958b;
-  cursor: pointer;
+.contact-form .contact-form-container .contact-form-top .contact-top-info .contact-top-icon i {
+  font-size: 30px;
+  color: #fab700;
 }
-.container .loginBtn .sert .qaydaa .fa-regular:hover {
-  color: red;
-  transform: scale(1.12);
-  transition: 0.987s;
+.contact-form .contact-form-container .contact-form-top .contact-top-info .contact-top-text .contact-top-name {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #222222;
+  line-height: 1.2em !important;
 }
-.container .loginBtn .qeydiyyatsiz {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 45px;
-}
-.container .loginBtn .qeydiyyatsiz .qeydiyyatsiz-text {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-.container .loginBtn .qeydiyyatsiz .qeydiyyatsiz-text a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #645306;
-}
-.container .loginBtn .button {
-  width: 68%;
-  height: 48px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background: #b5babc;
-  border-radius: 10px;
-  margin-bottom: 25px;
-}
-.container .loginBtn .button .login {
-  width: 166px;
-  height: 48px;
-  padding: 17px;
-  color: #010101;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.678s;
-  z-index: 2;
-  border: none;
-  background: none;
-  border-radius: 10px;
-}
-.container .loginBtn .Sign-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-  width: 100%;
-  height: 58vh;
-  gap: 25px;
-  border-radius: 10px;
-  position: relative;
-}
-.container .loginBtn .Sign-container .loginParol {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  width: 75%;
-}
-.container .loginBtn .Sign-container .fa-circle-xmark {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  color: #ba958b;
-  cursor: pointer;
-}
-.container .loginBtn .Sign-container .fa-circle-xmark:hover {
-  color: red;
-  transform: scale(1.12);
-  transition: 0.987s;
-}
-.container .loginBtn .Sign-container .email {
-  padding: 2px 13px;
-  width: 100%;
-  height: 46px;
-  background-color: #eee;
-  border: 1px solid #ffd000;
-  border-radius: 6px;
-  outline: none;
-}
-.container .loginBtn .Sign-container .daxil-ol {
-  background-color: #ffd000;
-  cursor: pointer;
-  width: 100%;
-}
-.container .loginBtn .Signup-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 19px;
-  position: relative;
-}
-.container .loginBtn .Signup-container .rules {
-  position: fixed;
-  width: 100%;
-  height: 90%;
-  top: 80px;
-  background: rgba(0, 0, 0, 0.631372549);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container .loginBtn .Signup-container .rules .rules-container {
-  width: 35%;
-  height: 74%;
-  overflow-x: auto;
-  position: relative;
-  background-color: white;
-  padding: 4px;
-}
-.container .loginBtn .Signup-container .rules .rules-container .rules-text {
-  width: 96%;
-  text-align: start;
-  color: black;
-}
-.container .loginBtn .Signup-container .rules .rules-container .rulesExit {
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: 0.35s;
-  cursor: pointer;
-  font-size: 17px;
-}
-.container .loginBtn .Signup-container .rules .rules-container .rulesExit:hover {
-  color: red;
-  transition: 0s 0.35;
-  transform: scale(1.099);
-}
-.container .loginBtn .Signup-container .registerform {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  width: 75%;
-}
-.container .loginBtn .Signup-container .fa-circle-xmark {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  color: #ba958b;
-  cursor: pointer;
-}
-.container .loginBtn .Signup-container .fa-circle-xmark:hover {
-  color: red;
-  transform: scale(1.12);
-  transition: 0.987s;
-}
-.container .loginBtn .Signup-container p {
+.contact-form .contact-form-container .contact-form-top .contact-top-info .contact-top-text .contact-top-txt {
+  margin-bottom: 1rem;
+  color: #777777;
   font-size: 14px;
-  color: #ba958b;
-  cursor: pointer;
-  text-align: center;
-  margin-bottom: 8px;
+  font-weight: 300;
+  line-height: 1.625em;
 }
-.container .loginBtn .Signup-container .email {
-  padding: 2px 13px;
-  width: 100%;
-  height: 46px;
-  background-color: #eee;
-  border: 1px solid #ffd000;
-  border-radius: 6px;
-  outline: none;
-}
-.container .loginBtn .Signup-container .qayda {
-  width: 75%;
-  font-size: 17px;
+.contact-form .contact-form-container .contact-form-bottom {
+  width: 72%;
   display: flex;
-  align-items: flex-start;
-  gap: 3px;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 28px;
 }
-.container .loginBtn .Signup-container .qayda .checkbox {
-  width: 11px;
-  height: 14px;
+@media (max-width: 767px) {
+  .contact-form .contact-form-container .contact-form-bottom {
+    width: 80% !important;
+  }
 }
-.container .loginBtn .Signup-container .qayda .qaydalar .qaydalink {
-  color: #ffd000;
-  cursor: pointer;
-  transition: 0.987s;
+@media (max-width: 991px) {
+  .contact-form .contact-form-container .contact-form-bottom {
+    width: 90%;
+  }
 }
-.container .loginBtn .Signup-container .qayda .qaydalar .qaydalink:hover {
-  color: black;
-}
-.container .loginBtn .Signup-container .daxil-ol {
-  background-color: #ffd000;
-  cursor: pointer;
-  width: 100%;
-}
-.container .loginBtn .Signup-container .fullname {
-  width: 100%;
+.contact-form .contact-form-container .contact-form-bottom .form-top {
   display: flex;
-  gap: 5px;
 }
-.container .loginBtn .Signup-container .fullname .add {
-  width: 100%;
+@media (max-width: 991px) {
+  .contact-form .contact-form-container .contact-form-bottom .form-top {
+    flex-direction: column !important;
+  }
 }
-.container .loginBtn .Signup-container .fullname .add .ad {
-  padding: 2px 13px;
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-input {
+  width: 43.705%;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .contact-form .contact-form-container .contact-form-bottom .form-top .form-top-input {
+    width: 100% !important;
+  }
+}
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-input .input {
+  font-size: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
   width: 100%;
-  height: 46px;
-  background-color: #eee;
+  outline: none;
   border: 1px solid #ffd000;
-  border-radius: 6px;
+}
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-input .succes {
+  text-transform: uppercase;
+  width: 100%;
+}
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-message {
+  width: 43.705%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 991px) {
+  .contact-form .contact-form-container .contact-form-bottom .form-top .form-top-message {
+    width: 100% !important;
+  }
+}
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-message .mesaj {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #ffd000;
+  font-size: 12px;
   outline: none;
 }
-.container .loginBtn .Signup-container .fullname .soyadd {
-  width: 100%;
-}
-.container .loginBtn .Signup-container .fullname .soyadd .soyad2 {
-  padding: 2px 13px;
-  width: 100%;
-  height: 46px;
-  background-color: #eee;
-  border: 1px solid #ffd000;
-  border-radius: 6px;
-  outline: none;
-}
-.container .block {
-  display: block !important;
+.contact-form .contact-form-container .contact-form-bottom .form-top .form-top-message .form-buton {
+  background-color: #fab700;
+  line-height: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  margin-top: 25px;
 }
 
 .footer {
@@ -696,4 +555,4 @@ body::-webkit-scrollbar-thumb {
 }
 .footer .end .end-container .end-text .end-txt {
   color: #ffd000;
-}/*# sourceMappingURL=account.css.map */
+}/*# sourceMappingURL=contact.css.map */

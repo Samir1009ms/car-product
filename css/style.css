@@ -232,7 +232,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   height: 100%;
   z-index: 0;
-  background: rgba(0, 0, 0, 0.3882352941);
+  background: rgba(0, 0, 0, 0.56);
 }
 .main .main-video .main-content .main-content-container {
   width: 78%;
@@ -2081,6 +2081,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   padding: 6px;
   cursor: pointer;
+  border: none;
 }
 .footer .footer-container .footer-center {
   width: 30.595%;

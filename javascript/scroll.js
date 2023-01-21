@@ -1,5 +1,7 @@
 const nav = document.querySelector(".nav");
 
+
+
 window.addEventListener("scroll", () => {
   // console.log(window.scrollY)
   if (window.scrollY > 450) {
@@ -13,32 +15,20 @@ const scrollicon = document.querySelector(".scroll");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 700) {
-    let time = 0;
-    // let interval = setInterval(function () {
-    //     if (time >= 81) {
-    //         clearInterval(interval);
-    //     }
-    //     if (time == 81) {
-    //         scrollicon.style.transform = `translateY(${(10) * 1}px)`
-    //     }
-    //     else{
-    //         time += 1;
-    //     }
-    //     console.log(time);
-    // }, 100);
+
     setTimeout(() => {
       scrollicon.style.transform = `translateY(${10 * 1}px)`;
-      console.log("1lll");
+      // console.log("1lll");
       clearTimeout();
     }, 10);
   } else {
     scrollicon.style.transform = `translateY(${93 * 1}px)`;
-    console.log("22lll");
+    // console.log("22lll");
   }
 });
 
 scrollicon.addEventListener("click", () => {
-  console.log("skdfjsdf");
+  // console.log("skdfjsdf");
   let say = window.scrollY;
   let interval = setInterval(() => {
     window.scrollTo(0, say);
@@ -47,4 +37,9 @@ scrollicon.addEventListener("click", () => {
       clearInterval(interval);
     }
   }, 5);
+
+
+
 });
+
+
