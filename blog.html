@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARBOOK</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <!-- text font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +19,7 @@
     <!-- title icon link -->
     <link rel="icon" href="./img/44654_car_icon (1).png" type="image/x-icon">
 </head>
+
 <body>
     <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="" />
     <header class="header">
@@ -23,18 +28,22 @@
                 <div class="nav-logo">
                     <img class="logo" src="./img/logo/logo.png.webp" alt="car_logo" />
                 </div>
-                <div class="hamburger">
-                    <div class="menubar menu-top"></div>
-                    <div class="menubar center"></div>
-                    <div class="menubar menu-bottom"></div>
-                </div>
+
                 <div class="nav-list">
                     <ul class="nav-list-top">
                         <li class="listler"><a class="list-link" href="./index.html">home</a></li>
-                        <li class="listler"><a  class="list-link" href="./about.html">about</a></li>
+                        <li class="listler"><a class="list-link" href="./about.html">about</a></li>
                         <li class="listler"><a class="list-link" href="#">services</a></li>
                         <li class="listler"><a class="list-link" href="#">cars</a></li>
-                        <li class="listler"><a class="list-link" href="#">pages</a></li>
+                        <li class="listler pagesDrop iki">pages<i class="fa-solid fa-caret-down"></i>
+                            <ul class="drow2 hidden">
+                                <li class="down"><a class="down-link" href="./pages.html">pricing</a></li>
+                                <li class="down"><a class="down-link" href="">driver</a></li>
+                                <li class="down"><a class="down-link" href="">faq</a></li>
+                                <li class="down"><a class="down-link" href="./gallery.html">gallery</a></li>
+                                <li class="down"><a class="down-link" href="">help desk</a></li>
+                            </ul>
+                        </li>
                         <li class="listler blogDrop" style="color: #ffd000;">blog <i class="fa-solid fa-caret-down"></i>
                             <ul class="drow hidden">
                                 <li class="down"><a class="down-link" href="./blog.html">blog page</a></li>
@@ -42,9 +51,23 @@
                             </ul>
                         </li>
                         <li class="listler"><a class="list-link" href="./contact.html">contact</a></li>
-                        <li class="listler"><a class="list-link" href="./account.html"><i class="fa-solid fa-user"></i>login</a>
+                        <li class="listler"><a class="list-link" href="./account.html"><i
+                                    class="fa-solid fa-user"></i>login</a>
                         </li>
                     </ul>
+                </div>
+                <div class="butons">
+                    <div class="hamburger">
+                        <i class="hamburgr fa-solid fa-bars"></i>
+                    </div>
+                    <div class="button">
+                        <button id="buton" class="buton">
+                            <i class="fa-solid fa-moon ay dark"></i>
+                            <i class="fa-solid fa-sun ay light"></i>
+                        </button>
+
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -136,7 +159,8 @@
                     </div>
                 </div>
                 <div class="articles-bottom column-revers">
-                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/arti-thumb-4.jpg.webp" alt=""></div>
+                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/arti-thumb-4.jpg.webp" alt="">
+                    </div>
                     <div class="articles-right art">
                         <p class="articles-date date2">14 feb</p>
                         <div class="articles-right-container">
@@ -166,7 +190,8 @@
                     <p class="articles-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div> -->
                 <div class="articles-bottom">
-                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/arti-thumb-4.jpg.webp" alt=""></div>
+                    <div class="articles-img"><img class="articles-jpg" src="./img/photo/arti-thumb-4.jpg.webp" alt="">
+                    </div>
                     <div class="articles-right">
                         <p class="articles-date">25 jan</p>
                         <div class="articles-right-container">
@@ -255,8 +280,8 @@
                 <div class="articles-buton-container">
                     <div class="buton">
                         <button class="buttonPrew">Previous</button>
-                        <button class="button">1</button>
-                        <button class="button">2</button>
+                        <button class="buttonx">1</button>
+                        <button class="buttonx">2</button>
                         <button class="buttonNext">Next</button>
                     </div>
                 </div>
@@ -310,10 +335,12 @@
             </div>
         </div>
     </footer>
+    <script src="./javascript/dark.js"></script>
     <script src="./javascript/blog.js"></script>
     <script src="./javascript/footer.js"></script>
     <script src="./javascript/menubar.js"></script>
     <script src="./javascript/scroll.js"></script>
     <script src="https://kit.fontawesome.com/081a8069c2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

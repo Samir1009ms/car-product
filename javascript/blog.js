@@ -1,30 +1,32 @@
 const articles = document.querySelectorAll(".articles-container");
 const buttonPrew = document.querySelector(".buttonPrew");
 const buttonNext = document.querySelector(".buttonNext");
-const button = document.querySelectorAll(".button");
+const buttonx = document.querySelectorAll(".buttonx");
 
 let u = 1;
 
 function blogLeft() {
   if (u == articles.length - 1) {
     u = 0;
-    articles[0].style.display = "none";
-    articles[1].style.display = "block";
-  } else {
-    u++;
     articles[1].style.display = "none";
     articles[0].style.display = "block";
+  } else {
+    u++;
+    articles[0].style.display = "none";
+    articles[1].style.display = "block";
   }
 
-  button.forEach((element, index) => {
+  // buttonNext.addEventListener("click",()=>{})
+  buttonx.forEach((element, index) => {
     element.addEventListener("click", () => {
       u = index;
+      console.log(u);
 
-      button.forEach((element, index) => {
+      buttonx.forEach((element, index) => {
         if (index == u) {
-          element.style.background = "#ffd000";
+          element.classList.add("bb")
         } else {
-          element.style.background = "#fff";
+          element.classList.remove("bb");
         }
       });
       articles.forEach((element, index) => {
@@ -36,12 +38,13 @@ function blogLeft() {
         }
       });
     });
-    button.forEach((element,index)=>{
+    buttonx.forEach((element,index)=>{
         if(index==u){
-            element.style.background = "#ffd000";
+          element.classList.add("bb")
         }
         else{
-            element.style.background = "#fff";
+          element.classList.remove("bb");
+
         
         }
     })
@@ -52,26 +55,30 @@ blogLeft();
 
 buttonPrew.addEventListener("click", blogLeft);
 
+u=0
 function blogRight() {
   if (u == 0) {
     u = articles.length - 1;
-    articles[1].style.display = "none";
-    articles[0].style.display = "block";
-  } else {
-    u--;
     articles[0].style.display = "none";
     articles[1].style.display = "block";
+  } else {
+    u--;
+    articles[1].style.display = "none";
+    articles[0].style.display = "block";
   }
 
-  button.forEach((element, index) => {
+  buttonx.forEach((element, index) => {
     element.addEventListener("click", () => {
       u = index;
-
-      button.forEach((element, index) => {
+      buttonx.forEach((element, index) => {
         if (index == u) {
-          element.style.background = "#ffd000";
+          element.classList.add("bb")
+
+      console.log(index);
+
         } else {
-          element.style.background = "#fff";
+          element.classList.remove("bb")
+
         }
       });
       articles.forEach((element, index) => {
@@ -83,12 +90,14 @@ function blogRight() {
         }
       });
     });
-    button.forEach((element,index)=>{
+    buttonx.forEach((element,index)=>{
         if(index==u){
-            element.style.background = "#ffd000";
+          element.classList.add("bb")
+
         }
         else{
-            element.style.background = "#fff";
+          element.classList.remove("bb")
+
         
         }
     })

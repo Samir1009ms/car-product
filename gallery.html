@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARBOOK</title>
+    <!-- text font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <!-- title icon link -->
+    <link rel="icon" href="./img/44654_car_icon (1).png" type="image/x-icon">
+
+</head>
+
+<body>
+    <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="" />
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img class="logo" src="./img/logo/logo.png.webp" alt="car_logo" />
+                </div>
+                <div class="nav-list">
+                    <ul class="nav-list-top">
+                        <li class="listler"><a class="list-link" href="./index.html">home</a></li>
+                        <li class="listler"><a class="list-link" href="./about.html">about</a></li>
+                        <li class="listler"><a class="list-link" href="#">services</a></li>
+                        <li class="listler"><a class="list-link" href="#">cars</a></li>
+                        <li class="listler pagesDrop iki" style="color: #ffd000;">pages<i
+                                class="fa-solid fa-caret-down"></i>
+                            <ul class="drow2 hidden">
+                                <li class="down"><a class="down-link" href="./pages.html">pricing</a></li>
+                                <li class="down"><a class="down-link" href="">driver</a></li>
+                                <li class="down"><a class="down-link" href="">faq</a></li>
+                                <li class="down"><a class="down-link" href="">gallery</a></li>
+                                <li class="down"><a class="down-link" href="">help desk</a></li>
+                            </ul>
+                        </li>
+                        <li class="listler blogDrop">blog <i class="fa-solid fa-caret-down"></i>
+                            <ul class="drow hidden">
+                                <li class="down"><a class="down-link" href="./blog.html">blog page</a></li>
+                                <li class="down"><a class="down-link" href="./blogdetails.html">blog details</a></li>
+                            </ul>
+                        </li>
+                        <li class="listler"><a class="list-link" href="./contact.html">contact</a></li>
+                        <li class="listler"><a class="list-link" href="./account.html"><i
+                                    class="fa-solid fa-user"></i>login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="butons">
+                    <div class="hamburger">
+                        <i class="hamburgr fa-solid fa-bars"></i>
+                    </div>
+                    <div class="button">
+                        <button id="buton" class="buton">
+                            <i class="fa-solid fa-moon ay dark"></i>
+                            <i class="fa-solid fa-sun ay light"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="pages-main">
+            <div class="pages-container">
+                <div class="pages-container-top">
+                    <h2 class="pages-text">OUR GALLERY</h2>
+                    <p class="pages-container-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </p>
+                    <p class="pages-txt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="car">
+            <div class="car-container">
+                <div class="car-bar1">
+                    <button data-btn="btn1" data-index="0" class="car-button  car-bar1-btn  popular">popular
+                        cars</button>
+                    <button data-btn="btn2" data-index="1" class="car-button new old">newest car</button>
+                    <button data-btn="btn3" data-index="2" class="car-button map">our office</button>
+                </div>
+                <div class="car-bar2">
+                    <button class="car-bar2-button car-bar2-btn car-full">all</button>
+                    <button class="car-bar2-button dodge">dodge</button>
+                    <button class="car-bar2-button bmw">bmw</button>
+                    <button class="car-bar2-button amg">amg</button>
+                    <button class="car-bar2-button nissan">nissan</button>
+                    <button class="car-bar2-button ford">ford</button>
+                </div>
+                <div class="map-cont" style="display: none;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.1754749516417!2d49.82186011520726!3d40.382803365626486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da6f327d463%3A0xbe68553e791e5e84!2sCoders%20Azerbaijan!5e0!3m2!1str!2s!4v1674129223975!5m2!1str!2s"
+                        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="car-select">
+                    <div data-name="dodge" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/dodge-challanger.jpg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">dodge challanger</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2022</span>
+                                    <span class="car-year">auto</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="dodge" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/dodge-challanger-2.jpg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">dodge</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2022</span>
+                                    <span class="car-year">manual</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="bmw" class="car-photo bmwww">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/bmw-e60.jpeg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">bmw e60</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2008</span>
+                                    <span class="car-year">manual</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="amg" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/creative-bespoke-mercedes-amg-gt-s-modifiye.jpg"
+                                    alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">amg gts</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2020</span>
+                                    <span class="car-year">manual</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="ford" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/Ford-Mustang-GT.jpg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">ford mustang</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2021</span>
+                                    <span class="car-year">auto</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-name="nissan" class="car-photo">
+                        <div class="car-container-info">
+                            <div class="car-img">
+                                <img class="car-jpg" src="./img/photo/nissan-gtr.jpg" alt="">
+                            </div>
+                            <div class="car-info-container">
+                                <span class="car-name">
+                                    <h4 class="car-text">nissan gtr</h4>
+                                    <span class="car-pul"> $100/day</span>
+                                </span>
+                                <p class="car-txt"> hatchback</p>
+                                <p class="car-info">
+                                    <span class="car-year">2019</span>
+                                    <span class="car-year">manual</span>
+                                    <span class="car-year">air condinition</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-details-info" style="display: none;">
+                <div class="details-container">
+                    <!-- pop up 1 start -->
+                    <div class="details-top" style="display: none;">
+                        <i class=" detailsend fa-regular fa-circle-xmark"></i>
+                        <div class="details-img-cont">
+                            <div class="details-left">
+                                <i class=" icoon img-left fa-solid fa-angle-left"></i>
+                                <img class="details-img-info" src="./img/photo/dodge-challanger.jpg" alt="">
+                                <i class=" icoon icon2 img-right fa-solid fa-angle-right"></i>
+                            </div>
+                            <div class="details-img-top">
+                                <div class="details-img-container"><img src="./img/photo/dodge-challanger.jpg" alt=""
+                                        class="detailsimglist det1"></div>
+                                <div class="details-img-container"><img src="./img/product/10-new_preview_image.jpg"
+                                        alt="" class="detailsimglist det1"></div>
+                                <div class="details-img-container"><img src="./img/product/doAAAgAJROA-1920.jpg" alt=""
+                                        class="detailsimglist det1"></div>
+                                <div class="details-img-container"><img src="./img/product/dodgcei14-01.jpg" alt=""
+                                        class="detailsimglist det1"></div>
+                                <div class="details-img-container"><img
+                                        src="./img/product/2018-Dodge-Challenger-SRT-Demon-engine-1.jpg" alt=""
+                                        class="detailsimglist det1"></div>
+                            </div>
+                        </div>
+                        <div class="details-right">
+                            <div class="details-right-container">
+                                <h1 class="details-info">Informations</h1>
+                                <div class="deails-info-left">
+                                    <p class="details-car-name">Dodge Challanger Helcat 2022 </p>
+                                    <ul class="details-car-info">
+                                        <li class="details-car-list"><span class="datails-info-text">Engine : </span>V6
+                                        </li>
+                                        <li class="details-car-list"><span class="datails-info-text">Engine code
+                                                :</span>Chrysler Pentastar V-6 3.6</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Fuel Type
+                                                :</span>Gasoline</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Fuel System
+                                                :</span>Sequential, multi-port, electronic, returnless</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Case type
+                                                :</span>coupe</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Number of doors
+                                                :</span>2</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Cylinder volume :
+                                            </span>3604 cm3 / 219.9 cu-ins</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Cylinder diameter x
+                                                In-cylinder stroke:</span>96.0 x 83.0mm</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Number of valves
+                                                :</span>24 valves</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Turbine :</span>N/A
+                                        </li>
+                                        <li class="details-car-list"><span class="datails-info-text">Compression
+                                                Ratio:</span>10.2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pop up 1 end -->
+                    <!-- pop up 2 start -->
+                    <div class="details-top" style="display: none;">
+                        <i class=" detailsend fa-regular fa-circle-xmark"></i>
+                        <div class="details-img-cont">
+                            <div class="details-left">
+                                <i class=" icoon img-left2 fa-solid fa-angle-left"></i>
+                                <img class="details-img-info details-img-info2" src="./img/photo/dodge-challanger-2.jpg"
+                                    alt="">
+                                <i class=" icoon icon2 img-right2 fa-solid fa-angle-right"></i>
+                            </div>
+                            <div class="details-img-top">
+                                <div class="details-img-container"><img src="./img/photo/dodge-challanger-2.jpg" alt=""
+                                        class="detailsimglist det2"></div>
+                                <div class="details-img-container"><img
+                                        src="./img/product/manualUsed-2019-Dodge-Challenger-SRT-Hellcat-DRIVER-CONVENIENCE-PLUS-PACKAGE-MANUAL-TRANSMISSION-SPOILER.jpg"
+                                        alt="" class="detailsimglist det2"></div>
+                                <div class="details-img-container"><img
+                                        src="./img/product/44406a24-844c-46a1-8c37-c3f743f42252manualsalon.webp" alt=""
+                                        class="detailsimglist det2"></div>
+                                <div class="details-img-container"><img
+                                        src="./img/product/message-editor_1535502102669-xt2x6725manual salon.webp"
+                                        alt="" class="detailsimglist det2"></div>
+                                <div class="details-img-container"><img
+                                        src="./img/product/2018-Dodge-Challenger-SRT-Demon-engine-1.jpg" alt=""
+                                        class="detailsimglist det2"></div>
+                            </div>
+                        </div>
+                        <div class="details-right">
+                            <div class="details-right-container">
+                                <h1 class="details-info">Informations</h1>
+                                <div class="deails-info-left">
+                                    <p class="details-car-name">Dodge Challanger Helcat 2022 </p>
+                                    <ul class="details-car-info">
+                                        <li class="details-car-list"><span class="datails-info-text">Engine : </span>V6
+                                        </li>
+                                        <li class="details-car-list"><span class="datails-info-text">Engine code
+                                                :</span>Chrysler Pentastar V-6 3.6</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Fuel Type
+                                                :</span>Gasoline</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Fuel System
+                                                :</span>Sequential, multi-port, electronic, returnless</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Case type
+                                                :</span>coupe</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Number of doors
+                                                :</span>2</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Cylinder volume :
+                                            </span>3604 cm3 / 219.9 cu-ins</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Cylinder diameter x
+                                                In-cylinder stroke:</span>96.0 x 83.0mm</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Number of valves
+                                                :</span>24 valves</li>
+                                        <li class="details-car-list"><span class="datails-info-text">Turbine :</span>N/A
+                                        </li>
+                                        <li class="details-car-list"><span class="datails-info-text">Compression
+                                                Ratio:</span>10.2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pop up 2 end -->
+                    <!-- pop up 3 start -->
+
+                    <!-- pop up 3 end -->
+
+                    <!-- pop up 4 start -->
+
+                    <!-- pop up 4 end -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <h2 class="footer-name">ABOUT US</h2>
+                <img class="footer-logo" src="./img/logo/logo.png.webp" alt="">
+                <p class="footer-top-text">Lorem ipsum dolored is a sit ameted consectetur adipisicing elit. Nobis magni
+                    assumenda distinctio
+                    debitis, eum fuga fugiat error reiciendis.</p>
+                <form class="footer-form">
+                    <input class="footer-input" type="text" name="footer" id="" placeholder="Subscribe Our Newestler">
+                    <button class="footer-top-icon"><i class="fa-brands fa-telegram"></i></button>
+                </form>
+            </div>
+            <div class="footer-center">
+                <h2 class="footer-name">RECENT POSTS</h2>
+                <p class="footer-center-text">Hello Bangladesh! <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">Lorem ipsum dolor sit amet <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">Hello Bangladesh! <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+                <p class="footer-center-text">consectetur adipisicing elit? <i
+                        class=" footer-center-icon fa-solid fa-arrow-right-long"></i></p>
+            </div>
+            <div class="footer-bottom">
+                <h2 class="footer-name">GET TOUCH</h2>
+                <p class="footer-bottom-text">Lorem ipsum doloer sited amet, consectetur adipisicing elit. nibh auguea,
+                    scelerisque sed</p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-location-dot"></i> 800/8,
+                    Kazipara, Dhaka</p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-phone"></i> +880 01 86 25 72 43
+                </p>
+                <p class="footer-bottom-info"><i class=" footer-bottom-icon  fa-solid fa-envelope"></i>
+                    kazukamdu83@gmail.com</p>
+                <button class="footer-bottom-location">SHOW LOCATION</button>
+            </div>
+        </div>
+        <div class="end">
+            <div class="end-container">
+                <p class="end-text">
+                    Copyright ©2023 All rights reserved | This template is made with
+                    <i class=" endicon fa-regular fa-heart"></i>
+                    by <span class="end-txt">Coders Azerbaijan</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/dark.js"></script>
+    <script src="./javascript/car.js"></script>
+    <script src="./javascript/footer.js"></script>
+    <script src="./javascript/menubar.js"></script>
+    <script src="./javascript/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/081a8069c2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

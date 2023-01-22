@@ -1,0 +1,385 @@
+@import "variables";
+@import "mixins";
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+
+    @include mobile {
+        height: 80px !important;
+    }
+
+    .menubar {
+        width: 50px;
+        height: 7px;
+        position: relative;
+        border-radius: 3px;
+        background-color: #000ba2;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .nav {
+        width: 100%;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        .nav-container {
+            width: 86%;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            margin: 0 auto;
+            align-items: center;
+
+
+
+
+            @include mobile {
+                margin: 0 !important;
+                align-items: center;
+                width: 91%;
+            }
+
+            @include tablet {}
+
+
+
+            .nav-logo {
+                display: flex;
+                align-items: center;
+
+                // .logo {}
+            }
+
+
+
+            .nav-list {
+                @include mobile {
+                    position: absolute;
+                    // display: flex;
+                    top: 106px;
+                    width: 100%;
+                    background: black;
+                    padding-bottom: 28px;
+                    padding-left: 14px;
+                    display: none;
+                    transition: 0.7s;
+                }
+
+                @include tablet {
+                    position: absolute;
+                    top: 80px;
+                    width: 100%;
+                    background: black;
+                    padding-bottom: 28px;
+                    padding-left: 14px;
+                    left: 0;
+                    display: none;
+                }
+
+                .nav-list-top {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    gap: 15px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    @include mobile {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    @include tablet {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                    }
+
+                    .pagesDrop {
+                        position: relative;
+                        cursor: pointer;
+
+                        .drow2 {
+                            position: absolute;
+                            width: 140px;
+                            height: 140px;
+                            top: 52px;
+                            background: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            z-index: 3;
+
+                            @include tablet {
+                                position: relative;
+                                top: 0;
+                                background: none;
+
+                                &::after {
+                                    position: relative;
+                                    width: 0px;
+                                    display: none;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 14px;
+                                height: 14px;
+                                background: white;
+                                position: absolute;
+                                top: -6px;
+                                transform: rotateZ(46deg);
+                                left: 20px;
+                                z-index: 0;
+                            }
+
+                            .down {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                z-index: 1;
+
+                                @include tablet {
+
+                                    &:hover {
+                                        background: black !important;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: #ffd000;
+                                }
+
+
+                                .down-link {
+                                    padding-left: 10px;
+                                    color: #000;
+
+                                    @include tablet {
+                                        color: white;
+
+                                        &:hover {
+                                            color: #ffe000;
+
+                                        }
+                                    }
+
+
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .blogDrop {
+                        position: relative;
+                        cursor: pointer;
+
+                        .drow {
+                            position: absolute;
+                            width: 140px;
+                            height: 70px;
+                            top: 52px;
+                            background: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            z-index: 3;
+
+                            @include tablet {
+                                position: relative;
+                                top: 0;
+                                background: none;
+
+                                &::after {
+                                    position: relative;
+                                    width: 0px;
+                                    display: none;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 14px;
+                                height: 14px;
+                                background: white;
+                                position: absolute;
+                                top: -6px;
+                                transform: rotateZ(46deg);
+                                left: 20px;
+                                z-index: 0;
+                            }
+
+                            .down {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                z-index: 1;
+
+                                @include tablet {
+
+                                    &:hover {
+                                        background: black !important;
+                                    }
+                                }
+
+                                &:hover {
+                                    background: #ffd000;
+                                }
+
+
+                                .down-link {
+                                    padding-left: 10px;
+                                    color: #000;
+
+                                    @include tablet {
+                                        color: white;
+
+                                        &:hover {
+                                            color: #ffe000;
+
+                                        }
+                                    }
+
+
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .listler {
+
+                        color: white;
+
+                        &:hover {
+                            color: #ffd000;
+                            transition: all 0.35s;
+                        }
+
+                        .list-link {
+                            color: white;
+                            transition: all 0.35s;
+
+                            i {
+                                color: #ffd000;
+                                margin-right: 5px;
+                                z-index: 1;
+
+                            }
+
+                            &:hover {
+                                color: #ffd000;
+                                transition: all 0.35s;
+                            }
+
+                            &:active {
+                                color: #ffd000;
+
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+
+            .butons {
+                display: flex;
+                gap: 22px;
+                align-items: center;
+
+                .hamburgr{
+                    display: none;
+                    color: #ffd000;
+                    font-size: 24px;
+                    cursor: pointer;
+                    @include mobile {
+                        display: block;
+                    }
+
+                    @include tablet {
+                        display: block;
+                    }
+                }
+
+                .button {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    border-radius: 26px;
+    
+                    .buton {
+                        width: 100%;
+                        /* position: absolute; */
+                        height: 100%;
+                        background: none;
+                        border: none;
+                    }
+    
+                    .ay {
+                        position: absolute;
+                        right: 0%;
+                        top: 0%;
+                        background-color: rgba(248, 136, 39, 0.9411764706);
+                        padding: 7px 5px;
+                        border-radius: 26px;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+    
+    
+                    .light {
+                        color: #ffeb3b;
+                        display: var(--dsp-lay);
+                    }
+    
+                    .dark {
+                        color: white;
+                        background-color: #584904;
+    
+                    }
+    
+                    .hamburger {
+                        margin-left: 30px;
+                        width: 7px;
+                        height: 45px;
+                        z-index: 5;
+    
+                        
+                    }
+    
+    
+                }
+            }
+
+           
+
+        }
+    }
+}
