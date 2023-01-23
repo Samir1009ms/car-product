@@ -24,7 +24,7 @@ function blogLeft() {
 
       buttonx.forEach((element, index) => {
         if (index == u) {
-          element.classList.add("bb")
+          element.classList.add("bb");
         } else {
           element.classList.remove("bb");
         }
@@ -38,16 +38,13 @@ function blogLeft() {
         }
       });
     });
-    buttonx.forEach((element,index)=>{
-        if(index==u){
-          element.classList.add("bb")
-        }
-        else{
-          element.classList.remove("bb");
-
-        
-        }
-    })
+    buttonx.forEach((element, index) => {
+      if (index == u) {
+        element.classList.add("bb");
+      } else {
+        element.classList.remove("bb");
+      }
+    });
   });
 }
 
@@ -55,7 +52,7 @@ blogLeft();
 
 buttonPrew.addEventListener("click", blogLeft);
 
-u=0
+u = 0;
 function blogRight() {
   if (u == 0) {
     u = articles.length - 1;
@@ -72,13 +69,11 @@ function blogRight() {
       u = index;
       buttonx.forEach((element, index) => {
         if (index == u) {
-          element.classList.add("bb")
+          element.classList.add("bb");
 
-      console.log(index);
-
+          console.log(index);
         } else {
-          element.classList.remove("bb")
-
+          element.classList.remove("bb");
         }
       });
       articles.forEach((element, index) => {
@@ -90,17 +85,13 @@ function blogRight() {
         }
       });
     });
-    buttonx.forEach((element,index)=>{
-        if(index==u){
-          element.classList.add("bb")
-
-        }
-        else{
-          element.classList.remove("bb")
-
-        
-        }
-    })
+    buttonx.forEach((element, index) => {
+      if (index == u) {
+        element.classList.add("bb");
+      } else {
+        element.classList.remove("bb");
+      }
+    });
   });
 }
 

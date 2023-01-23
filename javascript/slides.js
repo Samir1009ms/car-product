@@ -14,9 +14,9 @@ function right() {
   });
 }
 
-setInterval(() => {
-  right();
-}, 1500);
+// setInterval(() => {
+//   right();
+// }, 1500);
 
 const serviceSlides = document.querySelectorAll(".services-bottom-container");
 const servicesContainer=document.querySelector(".services-container")
@@ -61,7 +61,7 @@ function servicesRight() {
   console.log("ss");
 }
 
-servicesRightBtn.addEventListener("click",servicesRight)
+// servicesRightBtn.addEventListener("click",servicesRight)
 
 
 

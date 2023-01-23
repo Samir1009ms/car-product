@@ -31,3 +31,12 @@ pagesDrop.addEventListener("click",()=>{
     drow2.classList.toggle("hidden")
     
 })
+
+
+const detailsDrop=document.querySelector(".detailsdrop")
+const drow3 =document.querySelector(".drow3")
+
+detailsDrop.addEventListener("click",()=>{
+    drow3.classList.toggle("hidden")
+    
+})

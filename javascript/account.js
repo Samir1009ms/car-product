@@ -23,6 +23,8 @@ let password = document.getElementById("sifre")
 let password2 = document.getElementById("sifre2")
 const mail2 = document.querySelector(".mail2")
 const mailerror = document.querySelector(".mailerror")
+const emailll=localStorage.getItem("email")
+const passwordd=localStorage.getItem("password")
 
 form.sifre.forEach(event => {
     event.addEventListener("keyup", (x) => {
@@ -56,6 +58,7 @@ registerform.addEventListener("submit", e => {
             sifreerror2.classList.add("hidden")
             password.setAttribute("style", "border:2px solid green")
             password2.setAttribute("style", "border:2px solid green")
+            localStorage.setItem("password",password.value)
 
         } else {
             sifreerror1.classList.remove("hidden")
@@ -65,9 +68,16 @@ registerform.addEventListener("submit", e => {
         }
 
     })
+
     if (text.test(registerform.email.value)) {
         mail2.setAttribute("style", "border:1px solid green")
         mailerror.classList.add("hidden")
+        localStorage.setItem("email",registerform.email.value)
+        if(emailll==registerform.email.value){
+            mailerror.classList.remove("hidden")
+        
+        }
+
 
     } else {
         mailerror.classList.remove("hidden")
@@ -116,6 +126,8 @@ loginSignup.addEventListener("click", () => {
 })
 
 const daxilOlBtn = document.querySelectorAll(".daxil-ol")
+
+
 const emailerror = document.querySelector(".emailerror")
 const mail = document.querySelector(".mail")
 const sifreerror = document.querySelector(".sifreerror")
@@ -124,9 +136,13 @@ const text = /^([\w\-\.]+)@((\[([0-9]{1,3}\.){3}[0-9]{1,3}\])|(([\w\-]+\.)+)([a-
 formlogin.addEventListener("submit", e => {
     e.preventDefault()
 
-    if (text.test(formlogin.email.value)) {
+    if (text.test(formlogin.email.value)&&(formlogin.email.value==emailll)) {
         mail.setAttribute("style", "border:1px solid green")
         emailerror.classList.add("hidden")
+        console.log(formlogin.email.value);
+        // console.log(emailll.value);
+
+
     } else {
         mail.setAttribute("style", "border:2px solid red")
         emailerror.classList.remove("hidden")
@@ -134,6 +150,7 @@ formlogin.addEventListener("submit", e => {
     if (sifr.test(formlogin.sifre.value)) {
         sifreerror.classList.add("hidden")
         parol.setAttribute("style", "border:2px solid green")
+
     }
     else {
         sifreerror.classList.remove("hidden")
@@ -152,3 +169,5 @@ rules.classList.toggle("hidden")
 qayda.addEventListener("click",()=>{
 rules.classList.toggle("hidden")
 })
+
+

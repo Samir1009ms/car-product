@@ -48,6 +48,6 @@ function left11() {
 
 }
 left11()
-let i=setInterval(() => {
-    left11()
-}, 4000);
+// let i=setInterval(() => {
+//     left11()
+// }, 4000);
