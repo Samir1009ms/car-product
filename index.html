@@ -15,14 +15,18 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
 <!-- Fav Icon -->
     <link rel="icon" href="./img/44654_car_icon (1).png" sizes="32x32" type="image/x-icon">
 </head>
 
 <body>
+    <div class="animation">
+        <img src="./img/logo/preloader.gif" alt="">
+    </div>
     <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="">
-    <header class="header">
+    <header class="header hidden">
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -78,7 +82,7 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main class="main contact hidden">
         <section class="main-video">
             <div class="video-container">
                 <video class="video" src="./video/InShot_20230118_010805774.mp4" autoplay muted></video>
@@ -841,7 +845,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer-container">
             <div class="footer-top">
                 <h2 class="footer-name">ABOUT US</h2>
@@ -890,6 +894,7 @@
             </div>
         </div>
     </footer>
+    <script src="./javascript/animation.js"></script>
     <script src="./javascript/dark.js"></script>
     <script src="./javascript/footer.js"></script>
     <script src="./javascript/menubar.js"></script>

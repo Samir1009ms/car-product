@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
 
     <!-- title icon link -->
@@ -24,8 +25,11 @@
 </head>
 
 <body>
+    <div class="animation">
+        <img src="./img/logo/preloader.gif" alt="">
+    </div>
     <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="" />
-    <header class="header">
+    <header class="header hidden">
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -81,7 +85,7 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main class="main contact hidden">
         <section class="pages-main">
             <div class="pages-container">
                 <div class="pages-container-top">
@@ -368,7 +372,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer-container">
             <div class="footer-top">
                 <h2 class="footer-name">ABOUT US</h2>
@@ -417,6 +421,7 @@
             </div>
         </div>
     </footer>
+    <script src="./javascript/animation.js"></script>
     <script src="./javascript/dark.js"></script>
     <script src="./javascript/car.js"></script>
     <script src="./javascript/footer.js"></script>

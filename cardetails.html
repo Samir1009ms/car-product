@@ -14,11 +14,15 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/cardetils.css">
     <link rel="icon" href="./img/44654_car_icon (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/animation.css">
 </head>
 
 <body>
+     <div class="animation">
+        <img src="./img/logo/preloader.gif" alt="">
+    </div>
     <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="" />
-    <header class="header">
+    <header class="header hidden">
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -74,7 +78,7 @@
             </div>
         </nav>
     </header>
-    <main class="car">
+    <main class="contact car hidden">
         <section class="car-main">
             <div class="car-container">
                 <div class="car-container-top">
@@ -353,7 +357,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer-container">
             <div class="footer-top">
                 <h2 class="footer-name">ABOUT US</h2>
@@ -402,6 +406,7 @@
             </div>
         </div>
     </footer>
+    <script src="./javascript/animation.js"></script>
     <script src="./javascript/car-details.js"></script>
     <script src="./javascript/dark.js"></script>
     <script src="./javascript/menubar.js"></script>
