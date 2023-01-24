@@ -22,6 +22,8 @@ body {
   --person-cont-bg: #b0adad;
   --person-bg-color: #fff;
   --dsp-lay: flex;
+  --car-bottom-color:#241301;
+  --text-color:black;
 }
 
 .dark {
@@ -38,6 +40,8 @@ body {
   --person-cont-bg: #5c5757;
   --person-bg-color: #282828;
   --dsp-lay: none;
+  --text-color:white;
+  --car-bottom-color:#ffd000;
 }
 
 .scroll {
@@ -141,6 +145,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 941px;
   overflow: hidden;
+  background: var(--about-cont-bg-color);
 }
 @media (max-width: 991px) {
   .car-details-container .car-details2 .delta .car-details-right {
@@ -152,10 +157,11 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-name {
-  border-bottom: 1px solid #ffd000;
+  border-bottom: 1px solid var(--car-bottom-color);
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  color: var(--text-color);
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-name .car-push {
   float: right;
@@ -171,13 +177,13 @@ body::-webkit-scrollbar-thumb {
   padding-top: 30px;
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-info .car-info-top {
-  color: #000;
+  color: var(--text-color);
   font-size: 20px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-info .car-info-text {
-  color: #666;
+  color: var(--about-text-cl);
   line-height: 2;
   font-size: 14px;
   letter-spacing: 0.8;
@@ -186,8 +192,6 @@ body::-webkit-scrollbar-thumb {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   gap: 44px;
 }
 @media (max-width: 991px) {
@@ -208,6 +212,7 @@ body::-webkit-scrollbar-thumb {
   border-collapse: collapse;
   width: 100%;
   text-align: justify;
+  color: var(--text-color);
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-info-table .table .table-cont tr .tabl-left {
   padding: 0.75rem;
@@ -221,6 +226,7 @@ body::-webkit-scrollbar-thumb {
 }
 .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-info-table .list {
   display: flex;
+  color: var(--text-color);
 }
 @media (max-width: 991px) {
   .car-details-container .car-details2 .delta .car-details-right .car-details-right-container .car-info-table .list {
@@ -279,7 +285,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--person-cont-bg);
 }
 .car-details-container .car-details2 .car-details-left .pricing-left .pricing-left-top .pricing-left-top-container .left-top-cont .left-top-cont-number {
-  color: var(--about-text-cl);
+  color: var(--text-color);
   font-size: 15px;
 }
 .car-details-container .car-details2 .car-details-left .pricing-left .pricing-left-top .pricing-left-top-container .left-top-cont .left-top-cont-number i {
@@ -323,12 +329,14 @@ body::-webkit-scrollbar-thumb {
 .car-details-container .car-details2 .car-details-left .pricing-left .pricing-left-center .left-center-cont .left-cont .left-cont-text .left-txt {
   width: 71%;
   line-height: 1.4;
+  color: var(--text-color);
 }
 .car-details-container .car-details2 .car-details-left .pricing-left .pricing-left-center .left-center-cont .left-cont .left-cont-text .left-date {
   display: block;
   margin-top: 5px;
   text-transform: uppercase;
   font-size: 10px;
+  color: var(--about-text-cl);
 }
 .car-details-container .car-details2 .car-details-left .pricing-left .pricing-left-bottom {
   width: 100%;

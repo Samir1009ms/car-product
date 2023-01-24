@@ -1,15 +1,18 @@
 const CarDetailsSlider =document.querySelectorAll(".car-details-right-container")
 const circl=document.querySelectorAll(".circle")
 
+locall=localStorage.getItem("index")
+
+console.log(locall);
 let leng =CarDetailsSlider.length-1
-let sa=1
+let sa=locall
 function detailsleft(){
 
-    if(sa==0){
-        sa=leng
-    }else{
-    sa--
-    }
+    // if(sa==0){
+    //     sa=leng
+    // }else{
+    // sa--
+    // }
 
     CarDetailsSlider.forEach((element,index)=>{
         

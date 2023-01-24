@@ -22,6 +22,7 @@ body {
   --person-cont-bg: #b0adad;
   --person-bg-color: #fff;
   --dsp-lay: flex;
+  --text-color:black;
 }
 
 .dark {
@@ -38,6 +39,7 @@ body {
   --person-cont-bg: #5c5757;
   --person-bg-color: #282828;
   --dsp-lay: none;
+  --text-color:white;
 }
 
 body::-webkit-scrollbar {
@@ -140,6 +142,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   padding: 100px 0px;
+  background: var(--about-bg-color);
 }
 .container .height {
   height: 850px;
@@ -148,7 +151,7 @@ body::-webkit-scrollbar-thumb {
   width: 34%;
   border-radius: 10px;
   gap: 7px;
-  background-color: rgba(0, 0, 0, 0.192);
+  background-color: var(--about-cont-bg-color);
   border: 1px solid #ffd000;
   padding-top: 20px;
 }
@@ -218,7 +221,7 @@ body::-webkit-scrollbar-thumb {
 .container .loginBtn .qeydiyyatsiz .qeydiyyatsiz-text a {
   text-decoration: none;
   cursor: pointer;
-  color: #645306;
+  color: var(--about-text-cl);
 }
 .container .loginBtn .button {
   width: 68%;
@@ -379,7 +382,7 @@ body::-webkit-scrollbar-thumb {
   height: 14px;
 }
 .container .loginBtn .Signup-container .qayda .qaydalar .qaydalink {
-  color: #ffd000;
+  color: var(--color-pul);
   cursor: pointer;
   transition: 0.987s;
 }

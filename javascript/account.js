@@ -161,7 +161,7 @@ formlogin.addEventListener("submit", e => {
 
 const rulesExit =document.querySelector(".rulesExit")
 const rules =document.querySelector(".rules")
-const qayda =document.querySelector(".qayda")
+const qayda =document.querySelector(".qaydalink")
 
 rulesExit.addEventListener("click",()=>{
 rules.classList.toggle("hidden")

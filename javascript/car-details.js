@@ -3,6 +3,7 @@ const CarPrew = document.querySelector(".prew");
 const CarNext = document.querySelector(".next");
 const Click = document.querySelectorAll(".click");
 
+const locall =localStorage.getItem("index")
 let c = 1;
 
 function carleft() {
@@ -30,7 +31,7 @@ function carleft() {
       });
 
       carDetails.forEach((element, index) => {
-        if (index == u) {
+        if (index == c) {
           element.classList.remove("hidden");
         } else {
           element.classList.add("hidden");
@@ -102,6 +103,9 @@ let  df =0;
     carDetailsButton.forEach((element, index) => {
         element.addEventListener("click", () => {
           df = index;
+    
+          localStorage.setItem("index",df)
+
           carDetailsButton.forEach((element, index) => {
             if (index == df) {
               console.log(element, index);

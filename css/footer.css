@@ -78,6 +78,14 @@
   cursor: pointer;
   border: none;
 }
+.footer .footer-container .footer-top .footer-mesaj {
+  text-transform: uppercase;
+  color: rgb(241, 45, 45);
+}
+.footer .footer-container .footer-top .footer-succes {
+  text-transform: uppercase;
+  color: greenyellow;
+}
 .footer .footer-container .footer-center {
   width: 30.595%;
 }

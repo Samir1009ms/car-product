@@ -22,6 +22,8 @@ body {
   --person-cont-bg: #b0adad;
   --person-bg-color: #fff;
   --dsp-lay: flex;
+  --text-color:black;
+  background: var(--about-bg-color);
 }
 
 .dark {
@@ -38,6 +40,7 @@ body {
   --person-cont-bg: #5c5757;
   --person-bg-color: #282828;
   --dsp-lay: none;
+  --text-color:white;
 }
 
 .scroll {
@@ -143,6 +146,9 @@ body::-webkit-scrollbar-thumb {
 .car .car-details {
   width: 80%;
   margin: auto;
+  padding-bottom: 19px;
+  background: var(--about-cont-bg-color);
+  color: var(--about-text-cl);
 }
 .car .car-details .car-details-container {
   width: 100%;
@@ -154,6 +160,7 @@ body::-webkit-scrollbar-thumb {
   padding: 100px 0 20px;
 }
 .car .car-details .car-details-container .car-details-info {
+  background: var(--person-cont-bg);
   width: 47%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
@@ -181,7 +188,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 .car .car-details .car-details-container .car-details-info .car-details-form .car-details-top .car-details-name {
-  color: #22252c;
+  color: var(--text-color);
   font-size: 20px;
   font-weight: 600;
 }
@@ -208,7 +215,7 @@ body::-webkit-scrollbar-thumb {
 }
 .car .car-details .car-details-container .car-details-info .car-details-form .car-details-text {
   font-size: 14px;
-  color: #333;
+  color: var(--about-text-cl);
 }
 .car .car-details .car-details-container .car-details-info .car-details-form .table {
   border: 1px solid black;
@@ -240,6 +247,9 @@ body::-webkit-scrollbar-thumb {
   padding: 13px 30px;
   border: none;
 }
+.car .car-details .car-details-container .car-details-info .car-details-form .car-details-button a {
+  color: white;
+}
 .car .car-details .car-details-buttonx {
   width: 97%;
   margin: auto;
@@ -249,6 +259,8 @@ body::-webkit-scrollbar-thumb {
   border-collapse: collapse;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+  background: var(--about-text-cl);
+  color: var(--about-bg-color);
 }
 .car .car-details .car-details-buttonx .button-table tbody .buton {
   cursor: pointer;

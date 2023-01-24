@@ -7,7 +7,7 @@ let say3=0
 
 
 
-// window.addEventListener("scroll",()=>{
+window.addEventListener("scroll",()=>{
 
     console.log(window.scrollY);
     if(window.scrollY>1750){
