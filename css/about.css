@@ -679,6 +679,7 @@ body::-webkit-scrollbar-thumb {
 .year {
   width: 100%;
   height: 282px;
+  background: var(--about-bg-color);
 }
 @media (max-width: 991px) {
   .year {
@@ -693,7 +694,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   display: flex;
   height: 100%;
-  align-items: center;
 }
 @media (max-width: 767px) {
   .year .year-container {
@@ -716,7 +716,7 @@ body::-webkit-scrollbar-thumb {
 .year .year-container .year-text {
   display: block;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--about-text-cl);
   margin-bottom: 10px;
   line-height: 1.2;
   margin-bottom: 0;
@@ -765,6 +765,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     padding: 0;
   }
+}
+.year .year-container .yer-left .year-left-container .year-left-text {
+  color: black !important;
 }
 .year .year-container .yer-left .year-right-left {
   width: 25%;

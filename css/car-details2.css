@@ -22,8 +22,8 @@ body {
   --person-cont-bg: #b0adad;
   --person-bg-color: #fff;
   --dsp-lay: flex;
-  --car-bottom-color:#241301;
-  --text-color:black;
+  --car-bottom-color: #241301;
+  --text-color: black;
 }
 
 .dark {
@@ -40,8 +40,8 @@ body {
   --person-cont-bg: #5c5757;
   --person-bg-color: #282828;
   --dsp-lay: none;
-  --text-color:white;
-  --car-bottom-color:#ffd000;
+  --text-color: white;
+  --car-bottom-color: #ffd000;
 }
 
 .scroll {
@@ -392,17 +392,28 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
 }
-.car-details-container .details-form .form-top .form-top-input .input {
+.car-details-container .details-form .form-top .form-top-input .forms {
+  width: 48%;
+}
+.car-details-container .details-form .form-top .form-top-input .forms .input {
   background-color: #fafafa;
   border: 1px solid #eaeaea;
   color: #000;
   padding: 15px;
   resize: none;
-  width: 48%;
+  width: 100%;
   outline: none;
 }
-.car-details-container .details-form .form-top .form-top-input .input:focus {
+.car-details-container .details-form .form-top .form-top-input .forms .input:focus {
   border: 1px solid #ffd000;
+}
+.car-details-container .details-form .form-top .form-top-input .nametext {
+  text-transform: uppercase;
+  color: red;
+}
+.car-details-container .details-form .form-top .form-top-input .emailtext {
+  text-transform: uppercase;
+  color: red;
 }
 .car-details-container .details-form .form-top .form-top-message {
   width: 100%;
@@ -421,6 +432,14 @@ body::-webkit-scrollbar-thumb {
 }
 .car-details-container .details-form .form-top .form-top-message .mesaj:focus {
   border: 1px solid #ffd000;
+}
+.car-details-container .details-form .form-top .form-top-message .mesajtxt {
+  text-transform: uppercase;
+  color: red;
+}
+.car-details-container .details-form .form-top .form-top-message .succes {
+  text-transform: uppercase;
+  color: green;
 }
 .car-details-container .details-form .form-top .form-top-message .butons .form-buton {
   background-color: #ffd000;

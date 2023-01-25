@@ -25,9 +25,9 @@ body {
     --person-cont-bg: #b0adad;
     --person-bg-color: #fff;
     --dsp-lay: flex;
-    --car-bottom-color:#241301;
+    --car-bottom-color: #241301;
 
-    --text-color:black;
+    --text-color: black;
 
 }
 
@@ -47,8 +47,8 @@ body {
     --person-cont-bg: #5c5757;
     --person-bg-color: #282828;
     --dsp-lay: none;
-    --text-color:white;
---car-bottom-color:#ffd000;
+    --text-color: white;
+    --car-bottom-color: #ffd000;
 
 
 }
@@ -104,12 +104,13 @@ body::-webkit-scrollbar-thumb {
         top: 630px;
         z-index: 2;
         left: 28%;
+
         @include tablet {
-                left: 40%;
-                top:28%;
+            left: 40%;
+            top: 28%;
         }
 
-        @include mobile{
+        @include mobile {
             left: 29% !important;
         }
 
@@ -156,6 +157,7 @@ body::-webkit-scrollbar-thumb {
 
         .delta {
             width: 66.55%;
+
             // display: flex;
             // height: 77%;
             // gap: 24px;
@@ -169,6 +171,7 @@ body::-webkit-scrollbar-thumb {
                 height: 941px;
                 overflow: hidden;
                 background: var(--about-cont-bg-color);
+
                 @include tablet {
                     height: 1160px;
                 }
@@ -253,8 +256,8 @@ body::-webkit-scrollbar-thumb {
                                 border-collapse: collapse;
                                 width: 100%;
                                 text-align: justify;
-                        color: var(--text-color);
-                                
+                                color: var(--text-color);
+
                                 tbody {}
 
                                 tr {
@@ -277,7 +280,7 @@ body::-webkit-scrollbar-thumb {
 
                         .list {
                             display: flex;
-                        color: var(--text-color);
+                            color: var(--text-color);
 
                             @include tablet {
                                 width: 100%;
@@ -287,6 +290,7 @@ body::-webkit-scrollbar-thumb {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
+
                                 @include tablet {
                                     width: 33%;
                                 }
@@ -313,9 +317,10 @@ body::-webkit-scrollbar-thumb {
         .car-details-left {
             width: 33.45%;
             padding-left: 30px;
+
             @include tablet {
                 width: 100%;
-            padding-left: 0px;
+                padding-left: 0px;
 
             }
 
@@ -326,13 +331,13 @@ body::-webkit-scrollbar-thumb {
                 flex-direction: column;
                 align-items: center;
 
-             
+
 
                 .pricing-left-top {
                     width: 100%;
                     box-shadow: 0px 0px 10px 1px#0000008c;
                     margin-bottom: 40px;
-               
+
                     .pricing-left-top-container {
                         .left-top-name {
                             background-color: #ffd000;
@@ -374,7 +379,7 @@ body::-webkit-scrollbar-thumb {
                     background: var(--person-cont-bg);
 
 
-                  
+
 
                     .left-center-name {
                         background-color: #ffd000;
@@ -426,7 +431,7 @@ body::-webkit-scrollbar-thumb {
                     width: 100%;
                     box-shadow: 0px 0px 10px 1px#0000008c;
                     margin-bottom: 40px;
-                
+
 
                     .left-bottom-text {
                         background-color: #ffd000;
@@ -465,6 +470,7 @@ body::-webkit-scrollbar-thumb {
     .details-form {
         width: 51%;
         margin-left: 60px;
+
         @include tablet {
             width: 82%;
         }
@@ -489,26 +495,38 @@ body::-webkit-scrollbar-thumb {
                 display: flex;
                 justify-content: space-between;
 
-                .input {
-                    background-color: #fafafa;
-                    border: 1px solid #eaeaea;
-                    color: #000;
-                    padding: 15px;
-                    resize: none;
+                .forms {
                     width: 48%;
-                    outline: none;
 
-                    &:focus {
-                        border: 1px solid #ffd000;
+                    .input {
+                        background-color: #fafafa;
+                        border: 1px solid #eaeaea;
+                        color: #000;
+                        padding: 15px;
+                        resize: none;
+                        width: 100%;
+                        outline: none;
 
+                        &:focus {
+                            border: 1px solid #ffd000;
+
+                        }
                     }
+
                 }
 
-                .nametext {}
+                .nametext {
+                    text-transform: uppercase;
+                    color: red;
+                }
 
-                .emailtext {}
+                .emailtext {
+                    text-transform: uppercase;
+                    color: red;
+                }
 
-                .succes {}
+               
+             
             }
 
             .form-top-message {
@@ -532,7 +550,14 @@ body::-webkit-scrollbar-thumb {
                     }
                 }
 
-                .mesajtxt {}
+                .mesajtxt{
+                    text-transform: uppercase;
+                    color: red;
+                }
+                .succes {
+                    text-transform: uppercase;
+                    color: green;
+                }
 
                 .butons {
                     .form-buton {

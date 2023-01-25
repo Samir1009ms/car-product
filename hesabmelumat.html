@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hesab.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="container-left">
+            <form class="form">
+                <div class="form-ad class">
+                    <span class="form-ad-text class1">Ad</span>
+                    <input class="ad class2" type="text" name="ad" id="" placeholder="adinizi daxil edin">
+                    <small class="ad-error class3 hidden">adinizi daxil edin</small>
+                </div>
+                <div class="form-soyad class">
+                    <span class="form-soyad-text class1">Soyad</span>
+                    <input class="soyad class2" type="text" name="soyad" id="" placeholder="soyadinizi daxil edin">
+                    <small class="soyad-error class3 hidden">soyadinizi daxil edin</small>
+                </div>
+                <div class="form-email class">
+                    <span class="form-email-text class1">Email unvani</span>
+                    <input class="email class2" type="text" name="email" id="" placeholder="email adresinizi edin">
+                    <small class="email-error class3 hidden"> email adresinizi daxil edin</small>
+                </div>
+                <div class="form-nomre class">
+                    <span class="form-nomre-text class1">Telefon nomresi</span>
+                    <input class="number class2" type="number" name="nomre" id="" placeholder="+994 (XX) XXX-XX-XX">
+                    <small class="nomre-error class3 hidden">nomrenizi daxil edin</small>
+                </div>
+                <div class="form-tarix class">
+                    <span class="form-tarix-text class1">Dogum tarixi</span>
+                    <input class="tarix class2" type="text" name="tarix" id="" placeholder="__/__/___">
+                    <small class="tarix-error class3 hidden">dogum tarixinizi daxil edin</small>
+                    <small class="zaman class4">gun/ay/il</small>
+                </div>
+                <div class="form-cins">
+                    <p class="form-cins-text">cins</p>
+                    <div>
+                        <label for="kisi">
+                            <input class="kisi" type="radio" name="cins" id="" value="kisi" checked>
+                            kisi
+                        </label>
+                        <label for="qadin">
+                            <input class="qadin" type="radio" name="cins" id="" value="qadin">
+                            qadin
+                        </label>
+                    </div>
+                    <button class="form-buton" type="submit">Hesab melumatlarinizi yenileyin</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="xett"></div>
+        <div class="right">
+            <p class="right-text">sifreni yenileyin</p>
+            <form action="" class="right-form">
+                <div class="form-sifre class">
+                    <span class=" class1">kohne parol</span>
+                    <input class="cari class2" type="password" name="cari" id="" ">
+                    <small class=" cari-error class3 hidden">cari sifre duzgun daxil edilmeyib</small>
+                </div>
+                <div class="form-yeni class">
+                    <span class="class1">yeni parol</span>
+                    <input class="yeni1 class2" type="password" name="yeni" id="" ">
+                    <small class=" yeni1-error class3 hidden">parolu duzgun daxil edin</small>
+                </div>
+                <div class="form-yeni class">
+                    <span class="class1">yeni parolun tesdiqi</span>
+                    <input class="yeni2 class2" type="password" name="yeni" id="">
+                    <small class="yeni2-error class3 hidden">parollar eyni deyil</small>
+                </div>
+                <button class="refresh">Sifreni yenile</button>
+            </form>
+            <button class="esas"><a href="./index.html">esas sehifeye qayit</a></button>
+
+        </div>
+
+        <script src="./javascript/hesab.js"></script>
+    </section>
+</body>
+
+</html>

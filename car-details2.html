@@ -19,7 +19,7 @@
         <img src="./img/logo/preloader.gif" alt="">
     </div>
     <img class="scroll" src="./img/logo/scroll-top.png.webp" alt="" />
-    <header class="header">
+    <header class="header hidden">
         <nav class="nav">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -76,7 +76,7 @@
         </nav>
     </header>
 
-    <main class="car">
+    <main class="car contact hidden">
         <section class="car-main">
             <div class="car-container">
                 <div class="car-container-top">
@@ -442,8 +442,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="car-details-left">
@@ -524,21 +522,26 @@
                 </div>
                 <form action="" class="form-top">
                     <div class="form-top-input">
+                      <div class="forms">
                         <input class="input name" name="name" type="text" onfocus="this.placeholder=''"
-                            onblur="placeholder='Full Name'" placeholder="Full Name">
-                        <small class="nametext" style="display: none;">name</small>
+                        onblur="placeholder='Full Name'" placeholder="Full Name">
+                    <small class="nametext hidden" >name</small>
+                      </div>
+                       <div class="forms">
                         <input class="input email" name="email" type="text" onfocus="this.placeholder=''"
-                            onblur="placeholder='Enter email address'" placeholder="Enter email adress">
-                        <small class="emailtext" style="display: none;">email</small>
-                        <small class="succes" style="display: none;">succes</small>
+                        onblur="placeholder='Enter email address'" placeholder="Enter email adress">
+                    <small class="emailtext hidden" >email</small>
+                   
+                       </div>
                     </div>
                     <div class="form-top-message">
                         <textarea type="text" class="mesaj" name="mesaj" id="" onfocus="this.placeholder=''"
                             onblur="placeholder='Message'" placeholder="Message"></textarea>
-                        <small class="mesajtxt" style="display: none;">Mesajj</small>
+                        <small class="mesajtxt hidden" >Mesajj</small>
+                        <small class="succes hidden" >succes</small>
                         <div class="butons">
                             <button class="form-buton">SUBMIT</button>
-                            <button class="form-buton">CLEAR</button>
+                            <button type="button" class="form-buton clear">CLEAR</button>
                         </div>
                     </div>
 
@@ -551,7 +554,7 @@
         </section> -->
 
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer-container">
             <div class="footer-top">
                 <h2 class="footer-name">ABOUT US</h2>

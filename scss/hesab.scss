@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    height: 90%;
+    border: 1px solid #ba958b;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+
+    &-left {
+        width: 50%;
+        height: 100%;
+        margin-left: 20px;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+            width: 100%;
+
+
+
+            .class {
+                width: 55%;
+                height: 75px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                .class1 {
+                    position: absolute;
+                    top: -9px;
+                    left: 21px;
+                    background-color: white;
+                    padding: 0px 10px 0px 10px;
+                    color: #ba958b;
+                }
+
+                .class2 {
+                    height: 40px;
+                    width: 100%;
+                    border: 1px solid #ba958b;
+                    border-radius: 5px;
+                    outline: none;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                .class3 {
+                    color: red;
+                }
+
+
+            }
+
+            .form-cins {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 55%;
+                height: 102px;
+                position: relative;
+
+                .form-cins-text {}
+
+                div {
+                    display: flex;
+                    gap: 21px;
+
+                    label {
+                        .qadin {}
+
+                        .kisi {}
+                    }
+                }
+
+                .form-buton {
+                    height: 75px;
+                    width: 100%;
+                    background-color: #ba958b;
+                    border: none;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .xett {
+        width: 2px;
+        height: 90%;
+        background-color: #a69393;
+        margin-top: 31px;
+    }
+
+
+
+    .right {
+        width: 50%;
+        height: 70%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        &-text {
+            height: 60px;
+            margin-top: 20px;
+            font-size: 22px;
+            text-transform: uppercase;
+
+
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+
+
+
+            .class {
+                width: 55%;
+                height: 75px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                .class1 {
+                    position: absolute;
+                    top: -9px;
+                    left: 21px;
+                    background-color: white;
+                    padding: 0px 10px 0px 10px;
+                    color: #ba958b;
+                }
+
+                .class2 {
+                    height: 40px;
+                    width: 100%;
+                    border: 1px solid #ba958b;
+                    border-radius: 5px;
+                    outline: none;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                .class3 {
+                    color: red;
+                }
+
+
+            }
+
+            .refresh {
+                height: 44px;
+                width: 50%;
+                background-color: #ba958b;
+                border: none;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .esas {
+            height: 75px;
+            width: 50%;
+            background-color: #ba958b;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* margin-top: 25px; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

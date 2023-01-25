@@ -1,5 +1,4 @@
-
-const toggleBtn = document.querySelector("#buton");
+const toggleBtnx = document.querySelector("#buton");
 const theme = localStorage.getItem("theme");
 const dark = document.querySelector(".light")
 const them = localStorage.getItem("them")
@@ -7,7 +6,7 @@ const them = localStorage.getItem("them")
 if (theme === "dark") document.body.classList.add("dark")
 if (them === "dark") dark.classList.add("dark")
 
-toggleBtn.addEventListener("click", () => {
+toggleBtnx.addEventListener("click", () => {
     dark.classList.toggle("dark")
     document.body.classList.toggle("dark")
 
